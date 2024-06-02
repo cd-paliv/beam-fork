@@ -177,7 +177,7 @@ The [cookbook](https://github.com/GoogleCloudPlatform/dataflow-cookbook) include
 
 *   **[Java API Reference](/documentation/sdks/javadoc/)** - Official API Reference for the Java SDK.
 *   **[Python API Reference](/documentation/sdks/pydoc/)** - Official API Reference for the Python SDK.
-*   **[Go API Reference](https://pkg.go.dev/github.com/apache/beam/sdks/v2/go/pkg/beam)** - Official API Reference for the Go SDK.
+*   **[Go API Reference](https://pkg.go.dev/github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam)** - Official API Reference for the Go SDK.
 
 ## Feedback and Suggestions {#feedback-and-suggestions}
 

@@ -16,18 +16,19 @@
 package test
 
 import (
-	"beam.apache.org/learning/katas/core_transforms/groupbykey/groupbykey/pkg/task"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/testing/ptest"
-	"github.com/google/go-cmp/cmp"
 	"testing"
+
+	"beam.apache.org/learning/katas/core_transforms/groupbykey/groupbykey/pkg/task"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/testing/ptest"
+	"github.com/google/go-cmp/cmp"
 )
 
 func TestApplyTransform(t *testing.T) {
 	p, s := beam.NewPipelineWithRoot()
 	tests := []struct {
 		input beam.PCollection
-		want map[string][]string
+		want  map[string][]string
 	}{
 		{
 			input: beam.Create(s, "apple", "ball", "car", "bear", "cheetah", "ant"),

@@ -52,7 +52,7 @@ This table provides a consolidated, at-a-glance overview of the available built-
     </td>
      <td class="present">
       ✔
-      <a href="https://pkg.go.dev/github.com/apache/beam/sdks/v2/go/pkg/beam/io/fileio">native</a>
+      <a href="https://pkg.go.dev/github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/io/fileio">native</a>
     </td>
     <td>Not available</td>
     <td class="present">✔</td>
@@ -72,7 +72,7 @@ This table provides a consolidated, at-a-glance overview of the available built-
     </td>
     <td class="present">
       ✔
-      <a href="https://pkg.go.dev/github.com/apache/beam/sdks/v2/go/pkg/beam/io/avroio">native</a>
+      <a href="https://pkg.go.dev/github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/io/avroio">native</a>
     </td>
     <td class="present">
       ✔
@@ -95,7 +95,7 @@ This table provides a consolidated, at-a-glance overview of the available built-
     </td>
     <td class="present">
       ✔
-      <a href="https://pkg.go.dev/github.com/apache/beam/sdks/v2/go/pkg/beam/io/textio">native</a>
+      <a href="https://pkg.go.dev/github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/io/textio">native</a>
     </td>
     <td class="present">
       ✔
@@ -163,7 +163,7 @@ This table provides a consolidated, at-a-glance overview of the available built-
     </td>
     <td class="present">
       ✔
-      <a href="https://pkg.go.dev/github.com/apache/beam/sdks/v2/go/pkg/beam/io/parquetio">native</a>
+      <a href="https://pkg.go.dev/github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/io/parquetio">native</a>
     </td>
     <td class="present">
       ✔
@@ -219,7 +219,7 @@ This table provides a consolidated, at-a-glance overview of the available built-
     </td>
     <td class="present">
       ✔
-      <a href="https://pkg.go.dev/github.com/apache/beam/sdks/v2/go/pkg/beam/io/filesystem/gcs">native</a>
+      <a href="https://pkg.go.dev/github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/io/filesystem/gcs">native</a>
     </td>
     <td class="present">
       ✔via X-language
@@ -241,7 +241,7 @@ This table provides a consolidated, at-a-glance overview of the available built-
     </td>
     <td class="present">
       ✔
-      <a href="https://pkg.go.dev/github.com/apache/beam/sdks/v2/go/pkg/beam/io/filesystem/local">native</a>
+      <a href="https://pkg.go.dev/github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/io/filesystem/local">native</a>
     </td>
     <td class="present">
       ✔via X-language
@@ -276,7 +276,7 @@ This table provides a consolidated, at-a-glance overview of the available built-
     <td class="absent">✘</td>
     <td class="present">
       ✔
-      <a href="https://pkg.go.dev/github.com/apache/beam/sdks/v2/go/pkg/beam/io/filesystem/memfs">native</a>
+      <a href="https://pkg.go.dev/github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/io/filesystem/memfs">native</a>
     </td>
     <td class="absent">✘</td>
     <td class="present">✔</td>
@@ -327,7 +327,7 @@ This table provides a consolidated, at-a-glance overview of the available built-
     </td>
     <td class="present">
       ✔
-      <a href="https://pkg.go.dev/github.com/apache/beam/sdks/v2/go/pkg/beam/io/xlang/kafkaio">via X-language</a>
+      <a href="https://pkg.go.dev/github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/io/xlang/kafkaio">via X-language</a>
     </td>
     <td class="present">
       ✔
@@ -350,7 +350,7 @@ This table provides a consolidated, at-a-glance overview of the available built-
     </td>
     <td class="present">
       ✔
-      <a href="https://pkg.go.dev/github.com/apache/beam/sdks/v2/go/pkg/beam/io/pubsubio">native</a>
+      <a href="https://pkg.go.dev/github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/io/pubsubio">native</a>
     </td>
     <td class="present">
       ✔
@@ -541,10 +541,10 @@ This table provides a consolidated, at-a-glance overview of the available built-
     </td>
     <td class="present">
       ✔
-      <a href="https://pkg.go.dev/github.com/apache/beam/sdks/v2/go/pkg/beam/io/bigqueryio">native</a>
+      <a href="https://pkg.go.dev/github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/io/bigqueryio">native</a>
       <br>
       ✔
-      <a href="https://pkg.go.dev/github.com/apache/beam/sdks/v2/go/pkg/beam/io/xlang/bigqueryio">via X-language</a>
+      <a href="https://pkg.go.dev/github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/io/xlang/bigqueryio">via X-language</a>
     </td>
     <td class="present">
       ✔
@@ -570,10 +570,10 @@ This table provides a consolidated, at-a-glance overview of the available built-
     </td>
     <td class="present">
       ✔
-      <a href="https://pkg.go.dev/github.com/apache/beam/sdks/v2/go/pkg/beam/io/bigtableio">native</a> (sink)
+      <a href="https://pkg.go.dev/github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/io/bigtableio">native</a> (sink)
       <br>
       ✔
-      <a href="https://pkg.go.dev/github.com/apache/beam/sdks/v2/go/pkg/beam/io/xlang/bigtableio">via X-language</a>
+      <a href="https://pkg.go.dev/github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/io/xlang/bigtableio">via X-language</a>
     </td>
     <td>Not available</td>
     <td class="present">✔</td>
@@ -593,7 +593,7 @@ This table provides a consolidated, at-a-glance overview of the available built-
     </td>
     <td class="present">
       ✔
-      <a href="https://pkg.go.dev/github.com/apache/beam/sdks/v2/go/pkg/beam/io/datastoreio">native</a>
+      <a href="https://pkg.go.dev/github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/io/datastoreio">native</a>
     </td>
     <td>Not available</td>
     <td class="present">✔</td>
@@ -630,7 +630,7 @@ This table provides a consolidated, at-a-glance overview of the available built-
     </td>
     <td class="present">
       ✔
-      <a href="https://pkg.go.dev/github.com/apache/beam/sdks/v2/go/pkg/beam/io/spannerio">native</a>
+      <a href="https://pkg.go.dev/github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/io/spannerio">native</a>
     </td>
     <td>Not available</td>
     <td class="present">✔</td>
@@ -650,7 +650,7 @@ This table provides a consolidated, at-a-glance overview of the available built-
     </td>
     <td class="present">
       ✔
-      <a href="https://pkg.go.dev/github.com/apache/beam/sdks/v2/go/pkg/beam/io/xlang/jdbcio">via X-language</a>
+      <a href="https://pkg.go.dev/github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/io/xlang/jdbcio">via X-language</a>
     </td>
     <td>Not available</td>
     <td class="present">✔</td>
@@ -670,7 +670,7 @@ This table provides a consolidated, at-a-glance overview of the available built-
     </td>
     <td class="present">
       ✔
-      <a href="https://pkg.go.dev/github.com/apache/beam/sdks/v2/go/pkg/beam/io/xlang/debeziumio">via X-language</a>
+      <a href="https://pkg.go.dev/github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/io/xlang/debeziumio">via X-language</a>
     </td>
     <td>Not available</td>
     <td class="present">✔</td>
@@ -690,7 +690,7 @@ This table provides a consolidated, at-a-glance overview of the available built-
     </td>
     <td class="present">
       ✔
-      <a href="https://pkg.go.dev/github.com/apache/beam/sdks/v2/go/pkg/beam/io/mongodbio">native</a>
+      <a href="https://pkg.go.dev/github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/io/mongodbio">native</a>
     </td>
     <td>Not available</td>
     <td class="present">✔</td>
@@ -760,7 +760,7 @@ This table provides a consolidated, at-a-glance overview of the available built-
     <td class="absent">✘</td>
     <td class="present">
       ✔
-      <a href="https://pkg.go.dev/github.com/apache/beam/sdks/v2/go/pkg/beam/io/databaseio">native</a>
+      <a href="https://pkg.go.dev/github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/io/databaseio">native</a>
     </td>
     <td>Not available</td>
     <td class="present">✔</td>
@@ -805,7 +805,7 @@ This table provides a consolidated, at-a-glance overview of the available built-
     <td>Not available</td>
     <td class="present">
       ✔
-      <a href="https://pkg.go.dev/github.com/apache/beam/sdks/v2/go/pkg/beam/io/fhirio">native</a>
+      <a href="https://pkg.go.dev/github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/io/fhirio">native</a>
     </td>
     <td>Not available</td>
     <td class="present">✔</td>

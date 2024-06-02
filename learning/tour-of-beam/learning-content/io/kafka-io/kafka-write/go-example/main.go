@@ -31,13 +31,14 @@ package main
 import (
 	"context"
 	"flag"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/log"
 	"time"
-	//"github.com/apache/beam/sdks/v2/go/pkg/beam/x/beamx"
-	//"github.com/apache/beam/sdks/v2/go/pkg/beam/core/graph/window"
-	//"github.com/apache/beam/sdks/v2/go/pkg/beam/io/pubsubio"
-	//"github.com/apache/beam/sdks/v2/go/pkg/beam/io/xlang/kafkaio"
+
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/log"
+	//"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/x/beamx"
+	//"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/graph/window"
+	//"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/io/pubsubio"
+	//"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/io/xlang/kafkaio"
 )
 
 var (

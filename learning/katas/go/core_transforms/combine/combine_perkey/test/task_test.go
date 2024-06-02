@@ -16,10 +16,11 @@
 package test
 
 import (
-	"beam.apache.org/learning/katas/core_transforms/combine/combine_perkey/pkg/task"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/testing/ptest"
 	"testing"
+
+	"beam.apache.org/learning/katas/core_transforms/combine/combine_perkey/pkg/task"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/testing/ptest"
 )
 
 func TestApplyTransform(t *testing.T) {

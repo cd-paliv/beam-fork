@@ -16,11 +16,12 @@
 package test
 
 import (
-	"beam.apache.org/learning/katas/core_transforms/side_input/side_input/pkg/task"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/testing/passert"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/testing/ptest"
 	"testing"
+
+	"beam.apache.org/learning/katas/core_transforms/side_input/side_input/pkg/task"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/testing/passert"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/testing/ptest"
 )
 
 func TestApplyTransform(t *testing.T) {
@@ -31,16 +32,16 @@ func TestApplyTransform(t *testing.T) {
 			citiesAndCountriesKV beam.PCollection
 			persons              beam.PCollection
 		}
-		want  []interface{}
+		want []interface{}
 	}{
 		{
 			args: struct {
 				citiesAndCountriesKV beam.PCollection
-				persons            beam.PCollection
+				persons              beam.PCollection
 			}{
 				citiesAndCountriesKV: beam.ParDo(
 					s.Scope("Cities and Countries"),
-					func(_ []byte, emit func(string, string)){
+					func(_ []byte, emit func(string, string)) {
 						emit("Beijing", "China")
 						emit("London", "United Kingdom")
 						emit("San Francisco", "United States")

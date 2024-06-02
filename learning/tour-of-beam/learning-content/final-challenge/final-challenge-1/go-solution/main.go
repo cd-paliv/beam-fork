@@ -34,17 +34,18 @@ package main
 import (
 	"context"
 	"fmt"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/graph/window"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/graph/window/trigger"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/io/textio"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/transforms/filter"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/transforms/stats"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/x/beamx"
 	"log"
 	"strconv"
 	"strings"
 	"time"
+
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/graph/window"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/graph/window/trigger"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/io/textio"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/transforms/filter"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/transforms/stats"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/x/beamx"
 )
 
 type Transaction struct {

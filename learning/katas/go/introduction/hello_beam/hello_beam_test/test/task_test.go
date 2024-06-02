@@ -16,13 +16,14 @@
 package task
 
 import (
-	"beam.apache.org/learning/katas/introduction/hello_beam/hello_beam_test/pkg/task"
 	"context"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/log"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/testing/passert"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/testing/ptest"
 	"testing"
+
+	"beam.apache.org/learning/katas/introduction/hello_beam/hello_beam_test/pkg/task"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/log"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/testing/passert"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/testing/ptest"
 )
 
 func TestHelloBeam(t *testing.T) {

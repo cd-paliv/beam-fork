@@ -16,12 +16,12 @@
 package task
 
 import (
-	"github.com/apache/beam/sdks/v2/go/pkg/beam"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/transforms/filter"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/transforms/filter"
 )
 
 func ApplyTransform(s beam.Scope, input beam.PCollection) beam.PCollection {
 	return filter.Exclude(s, input, func(element int) bool {
-		return element % 2 == 1
+		return element%2 == 1
 	})
 }

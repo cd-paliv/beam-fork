@@ -16,9 +16,10 @@
 package task
 
 import (
-	"github.com/apache/beam/sdks/v2/go/pkg/beam"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/io/textio"
 	"strings"
+
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/io/textio"
 )
 
 // Read reads from filename(s) specified by a glob string and a returns a PCollection<string>.
@@ -30,4 +31,3 @@ func Read(s beam.Scope, glob string) beam.PCollection {
 func ApplyTransform(s beam.Scope, input beam.PCollection) beam.PCollection {
 	return beam.ParDo(s, strings.ToUpper, input)
 }
-

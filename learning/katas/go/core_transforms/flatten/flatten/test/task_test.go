@@ -16,11 +16,12 @@
 package test
 
 import (
-	"beam.apache.org/learning/katas/core_transforms/flatten/flatten/pkg/task"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/testing/passert"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/testing/ptest"
 	"testing"
+
+	"beam.apache.org/learning/katas/core_transforms/flatten/flatten/pkg/task"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/testing/passert"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/testing/ptest"
 )
 
 func TestApplyTransform(t *testing.T) {
@@ -28,12 +29,12 @@ func TestApplyTransform(t *testing.T) {
 	tests := []struct {
 		aWords beam.PCollection
 		bWords beam.PCollection
-		want  []interface{}
+		want   []interface{}
 	}{
 		{
 			aWords: beam.Create(s, "apple", "ant", "arrow"),
 			bWords: beam.Create(s, "ball", "book", "bow"),
-			want:  []interface{}{"apple", "ant", "arrow", "ball", "book", "bow"},
+			want:   []interface{}{"apple", "ant", "arrow", "ball", "book", "bow"},
 		},
 	}
 	for _, tt := range tests {
@@ -44,4 +45,3 @@ func TestApplyTransform(t *testing.T) {
 		}
 	}
 }
-

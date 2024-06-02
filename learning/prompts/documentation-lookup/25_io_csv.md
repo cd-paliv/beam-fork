@@ -5,7 +5,7 @@ Response:
 [CSV](https://en.wikipedia.org/wiki/Comma-separated_values) is a data format for storing and exchanging data. Apache Beam supports reading data from and writing data to CSV files using the `ReadFromText` and `WriteToText` transforms in the `TextIO` module. For more information, see the TextIO connector documentation:
 * [Java](https://beam.apache.org/releases/javadoc/current/org/apache/beam/sdk/io/TextIO.html)
 * [Python](https://beam.apache.org/releases/pydoc/current/apache_beam.io.textio.html)
-* [Go](https://pkg.go.dev/github.com/apache/beam/sdks/v2/go/pkg/beam/io/textio)
+* [Go](https://pkg.go.dev/github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/io/textio)
 * [Typescript](https://github.com/apache/beam/blob/master/sdks/typescript/src/apache_beam/io/textio.ts)
 
 To get started with CSV and Apache Beam, refer to the [Dataflow Cookbook GitHub repository](https://github.com/GoogleCloudPlatform/dataflow-cookbook).

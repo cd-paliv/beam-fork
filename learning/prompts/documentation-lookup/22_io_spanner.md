@@ -7,7 +7,7 @@ Response:
 Apache Beam has a built-in SpannerIO connector for Cloud Spanner that enables Apache Beam pipelines to read data from and write data to Cloud Spanner. Cloud Spanner is supported in both batch pipelines and streaming pipelines and can serve both as a source and a sink. For more information, see the SpannerIO connector documentation:
 * [Java](https://beam.apache.org/releases/javadoc/current/org/apache/beam/sdk/io/gcp/spanner/SpannerIO.html)
 * [Python (using cross-language transforms)](https://beam.apache.org/releases/pydoc/current/apache_beam.io.gcp.spanner.html)
-* [Go](https://pkg.go.dev/github.com/apache/beam/sdks/v2/go/pkg/beam/io/spannerio)
+* [Go](https://pkg.go.dev/github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/io/spannerio)
 
 To get started with Cloud Spanner and Apache Beam, refer to the [Dataflow Cookbook GitHub repository](https://github.com/GoogleCloudPlatform/dataflow-cookbook).
 
