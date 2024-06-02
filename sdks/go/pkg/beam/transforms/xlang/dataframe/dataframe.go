@@ -21,10 +21,10 @@ package dataframe
 import (
 	"reflect"
 
-	"github.com/apache/beam/sdks/v2/go/pkg/beam"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/runtime/xlangx"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/typex"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/transforms/xlang/python"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/runtime/xlangx"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/typex"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/transforms/xlang/python"
 )
 
 func init() {

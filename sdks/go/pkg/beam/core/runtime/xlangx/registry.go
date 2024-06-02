@@ -22,12 +22,12 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/graph"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/graph/coder"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/runtime/graphx"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/runtime/pipelinex"
-	jobpb "github.com/apache/beam/sdks/v2/go/pkg/beam/model/jobmanagement_v1"
-	pipepb "github.com/apache/beam/sdks/v2/go/pkg/beam/model/pipeline_v1"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/graph"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/graph/coder"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/runtime/graphx"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/runtime/pipelinex"
+	jobpb "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/model/jobmanagement_v1"
+	pipepb "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/model/pipeline_v1"
 )
 
 var defaultReg = newRegistry()

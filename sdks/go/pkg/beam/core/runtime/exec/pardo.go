@@ -23,16 +23,16 @@ import (
 	"path"
 	"reflect"
 
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/funcx"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/graph"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/graph/mtime"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/graph/window"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/metrics"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/sdf"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/timers"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/typex"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/internal/errors"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/util/errorx"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/funcx"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/graph"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/graph/mtime"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/graph/window"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/metrics"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/sdf"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/timers"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/typex"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/internal/errors"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/util/errorx"
 )
 
 // ParDo is a DoFn executor.

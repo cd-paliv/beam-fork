@@ -27,8 +27,8 @@ import (
 	"fmt"
 	"time"
 
-	fnpb "github.com/apache/beam/sdks/v2/go/pkg/beam/model/fnexecution_v1"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/util/grpcx"
+	fnpb "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/model/fnexecution_v1"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/util/grpcx"
 	"github.com/golang/protobuf/jsonpb"
 	google_pb "github.com/golang/protobuf/ptypes/struct"
 )

@@ -24,17 +24,17 @@ import (
 	"testing"
 	"time"
 
-	"github.com/apache/beam/sdks/v2/go/pkg/beam"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/metrics"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/options/jobopts"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/register"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/runners/prism/internal"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/runners/prism/internal/jobservices"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/runners/universal"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/testing/passert"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/testing/ptest"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/transforms/filter"
-	"github.com/apache/beam/sdks/v2/go/test/integration/primitives"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/metrics"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/options/jobopts"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/register"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/runners/prism/internal"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/runners/prism/internal/jobservices"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/runners/universal"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/testing/passert"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/testing/ptest"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/transforms/filter"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/test/integration/primitives"
 )
 
 func TestMain(m *testing.M) {
@@ -633,7 +633,7 @@ func (fn *discard) ProcessElement(int) {
 //
 // goos: linux
 // goarch: amd64
-// pkg: github.com/apache/beam/sdks/v2/go/pkg/beam/runners/direct
+// pkg: github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/runners/direct
 // cpu: 12th Gen Intel(R) Core(TM) i7-1260P
 // BenchmarkPipe/dofns=0-16         	  885811	      1333 ns/op	      1333 ns/elm	    1993 B/op	      22 allocs/op
 // BenchmarkPipe/dofns=1-16         	  457683	      2636 ns/op	      2636 ns/elm	    3986 B/op	      44 allocs/op
@@ -649,7 +649,7 @@ func (fn *discard) ProcessElement(int) {
 //
 // goos: linux
 // goarch: amd64
-// pkg: github.com/apache/beam/sdks/v2/go/pkg/beam/runners/direct
+// pkg: github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/runners/direct
 // cpu: 12th Gen Intel(R) Core(TM) i7-1260P
 // BenchmarkPipe/dofns=0-16         	   7660638	       145.8 ns/op	       145.8 ns/elm	     152 B/op	       2 allocs/op
 // BenchmarkPipe/dofns=1-16         	   3676358	       313.3 ns/op	       313.3 ns/elm	     304 B/op	       4 allocs/op

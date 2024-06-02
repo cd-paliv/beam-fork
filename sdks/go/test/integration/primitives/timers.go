@@ -21,14 +21,14 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/apache/beam/sdks/v2/go/pkg/beam"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/graph/mtime"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/state"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/timers"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/register"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/testing/passert"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/testing/teststream"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/transforms/periodic"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/graph/mtime"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/state"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/timers"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/register"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/testing/passert"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/testing/teststream"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/transforms/periodic"
 )
 
 // Based on https://github.com/apache/beam/blob/master/runners/flink/src/test/java/org/apache/beam/runners/flink/PortableTimersExecutionTest.java

@@ -22,7 +22,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/graph/coder"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/graph/coder"
 )
 
 type UserInterface interface {

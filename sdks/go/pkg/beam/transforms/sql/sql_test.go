@@ -16,10 +16,11 @@
 package sql
 
 import (
-	"github.com/apache/beam/sdks/v2/go/pkg/beam"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/transforms/sql/sqlx"
 	"reflect"
 	"testing"
+
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/transforms/sql/sqlx"
 )
 
 func TestOptions_Add(t *testing.T) {

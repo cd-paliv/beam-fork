@@ -31,14 +31,14 @@ import (
 
 	"golang.org/x/exp/slices"
 
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/runtime"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/runtime/graphx"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/runtime/harness"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/runtime"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/runtime/graphx"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/runtime/harness"
 
 	// Import gcs filesystem so that it can be used to upload heap dumps.
-	_ "github.com/apache/beam/sdks/v2/go/pkg/beam/io/filesystem/gcs"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/util/grpcx"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/util/syscallx"
+	_ "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/io/filesystem/gcs"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/util/grpcx"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/util/syscallx"
 )
 
 var (

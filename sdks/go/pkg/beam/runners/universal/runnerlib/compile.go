@@ -29,8 +29,8 @@ import (
 
 	"sync/atomic"
 
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/internal/errors"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/log"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/internal/errors"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/log"
 )
 
 // IsWorkerCompatibleBinary returns the path to itself and true if running

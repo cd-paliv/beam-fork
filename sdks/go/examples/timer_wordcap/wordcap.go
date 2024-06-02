@@ -26,14 +26,14 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/apache/beam/sdks/v2/go/pkg/beam"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/state"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/timers"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/log"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/register"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/transforms/periodic"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/x/beamx"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/x/debug"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/state"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/timers"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/log"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/register"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/transforms/periodic"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/x/beamx"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/x/debug"
 )
 
 type Stateful struct {

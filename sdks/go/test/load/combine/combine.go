@@ -20,13 +20,13 @@ import (
 	"context"
 	"flag"
 
-	"github.com/apache/beam/sdks/v2/go/pkg/beam"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/io/synthetic"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/log"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/register"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/transforms/top"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/x/beamx"
-	"github.com/apache/beam/sdks/v2/go/test/load"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/io/synthetic"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/log"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/register"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/transforms/top"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/x/beamx"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/test/load"
 )
 
 var (

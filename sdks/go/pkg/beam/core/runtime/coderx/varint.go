@@ -20,9 +20,9 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/graph/coder"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/typex"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/internal/errors"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/graph/coder"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/typex"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/internal/errors"
 )
 
 // NewVarIntZ returns a varint coder for the given integer type. It uses a zig-zag scheme,

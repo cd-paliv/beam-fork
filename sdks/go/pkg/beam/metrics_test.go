@@ -20,8 +20,8 @@ import (
 	"regexp"
 	"time"
 
-	"github.com/apache/beam/sdks/v2/go/pkg/beam"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/metrics"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/metrics"
 )
 
 // A beam_test global context var to improve how the examples look.

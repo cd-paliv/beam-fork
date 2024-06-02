@@ -15,8 +15,9 @@
 
 // Boot code for the transform service controller.
 // Contract:
-//   https://github.com/apache/beam/blob/master/model/job-management/src/main/proto/org/apache/beam/model/job_management/v1/beam_expansion_api.proto
-//   https://github.com/apache/beam/blob/master/model/job-management/src/main/proto/org/apache/beam/model/job_management/v1/beam_artifact_api.proto
+//
+//	https://github.com/apache/beam/blob/master/model/job-management/src/main/proto/org/apache/beam/model/job_management/v1/beam_expansion_api.proto
+//	https://github.com/apache/beam/blob/master/model/job-management/src/main/proto/org/apache/beam/model/job_management/v1/beam_artifact_api.proto
 package main
 
 import (
@@ -30,13 +31,13 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/util/execx"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/util/execx"
 )
 
 // Args:
 //   - Transform service port
 //   - Config file path. Config file contains:
-//     - A list of expansion services
+//   - A list of expansion services
 var (
 	port        = flag.Int("port", 0, "Port for the expansion service (required)")
 	config_file = flag.String("config_file", "", "Transform service config YAML file. (required)")

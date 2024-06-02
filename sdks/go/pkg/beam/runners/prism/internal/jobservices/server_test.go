@@ -21,9 +21,9 @@ import (
 	"sync"
 	"testing"
 
-	jobpb "github.com/apache/beam/sdks/v2/go/pkg/beam/model/jobmanagement_v1"
-	pipepb "github.com/apache/beam/sdks/v2/go/pkg/beam/model/pipeline_v1"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/runners/prism/internal/urns"
+	jobpb "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/model/jobmanagement_v1"
+	pipepb "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/model/pipeline_v1"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/runners/prism/internal/urns"
 	"google.golang.org/protobuf/encoding/prototext"
 )
 

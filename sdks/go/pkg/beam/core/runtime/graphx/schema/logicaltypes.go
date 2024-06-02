@@ -20,8 +20,8 @@ import (
 	"reflect"
 	"sync"
 
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/util/reflectx"
-	pipepb "github.com/apache/beam/sdks/v2/go/pkg/beam/model/pipeline_v1"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/util/reflectx"
+	pipepb "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/model/pipeline_v1"
 )
 
 var (

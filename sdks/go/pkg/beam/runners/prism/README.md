@@ -29,7 +29,7 @@ It's intended to replace the current Go Direct runner, but also be for general
 single machine use.
 
 For Go SDK users:
-  - `import "github.com/apache/beam/sdks/v2/go/pkg/beam/runners/prism"`
+  - `import "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/runners/prism"`
   - Short term: set runner to "prism" to use it, or invoke directly. &#x2611;
   - Medium term: switch the default from "direct" to "prism". &#x2611;
   - Long term: alias "direct" to "prism", and delete legacy Go direct runner.

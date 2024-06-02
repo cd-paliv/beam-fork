@@ -18,7 +18,7 @@ package regression
 import (
 	"testing"
 
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/testing/ptest"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/testing/ptest"
 )
 
 // TestMain invokes ptest.Main to allow running these tests on

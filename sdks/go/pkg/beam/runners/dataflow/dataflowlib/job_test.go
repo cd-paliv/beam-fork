@@ -21,9 +21,9 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/runtime/graphx"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/util/protox"
-	pipepb "github.com/apache/beam/sdks/v2/go/pkg/beam/model/pipeline_v1"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/runtime/graphx"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/util/protox"
+	pipepb "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/model/pipeline_v1"
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
 	df "google.golang.org/api/dataflow/v1b3"

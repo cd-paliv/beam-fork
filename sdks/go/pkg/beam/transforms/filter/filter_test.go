@@ -18,10 +18,10 @@ package filter_test
 import (
 	"testing"
 
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/register"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/testing/passert"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/testing/ptest"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/transforms/filter"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/register"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/testing/passert"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/testing/ptest"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/transforms/filter"
 )
 
 func TestMain(m *testing.M) {

@@ -24,12 +24,12 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/graph/mtime"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/sdf"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/state"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/timers"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/typex"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/util/reflectx"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/graph/mtime"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/sdf"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/state"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/timers"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/typex"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/util/reflectx"
 )
 
 type foo struct {

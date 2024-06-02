@@ -21,7 +21,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/apache/beam/sdks/v2/go/pkg/beam"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam"
 )
 
 func TestNewConfig(t *testing.T) {

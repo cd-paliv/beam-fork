@@ -22,14 +22,14 @@ import (
 	"strings"
 	"time"
 
-	"github.com/apache/beam/sdks/v2/go/pkg/beam"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/graph/mtime"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/graph/window"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/state"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/io/filesystem"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/log"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/register"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/transforms/periodic"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/graph/mtime"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/graph/window"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/state"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/io/filesystem"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/log"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/register"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/transforms/periodic"
 )
 
 func init() {

@@ -25,15 +25,15 @@ import (
 	"testing"
 	"time"
 
-	"github.com/apache/beam/sdks/v2/go/pkg/beam"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/util/reflectx"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/options/jobopts"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/runners/prism/internal"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/runners/prism/internal/engine"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/runners/prism/internal/jobservices"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/runners/universal"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/testing/ptest"
-	"github.com/apache/beam/sdks/v2/go/test/integration/primitives"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/util/reflectx"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/options/jobopts"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/runners/prism/internal"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/runners/prism/internal/engine"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/runners/prism/internal/jobservices"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/runners/universal"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/testing/ptest"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/test/integration/primitives"
 )
 
 func init() {

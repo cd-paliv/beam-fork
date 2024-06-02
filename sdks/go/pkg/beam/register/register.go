@@ -24,10 +24,10 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/runtime"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/runtime/graphx/schema"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/typex"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/util/reflectx"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/runtime"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/runtime/graphx/schema"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/typex"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/util/reflectx"
 )
 
 func registerStartBundle0x0FuncAndMakeStructWrapper() func(any) reflectx.Func {

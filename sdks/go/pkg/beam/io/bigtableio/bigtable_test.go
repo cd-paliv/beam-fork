@@ -22,8 +22,8 @@ import (
 	"testing"
 
 	"cloud.google.com/go/bigtable"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/testing/ptest"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/testing/ptest"
 )
 
 func TestMain(m *testing.M) {

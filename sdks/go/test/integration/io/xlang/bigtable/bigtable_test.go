@@ -26,14 +26,14 @@ import (
 	"time"
 
 	bt "cloud.google.com/go/bigtable"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/io/bigtableio"
-	xlangbt "github.com/apache/beam/sdks/v2/go/pkg/beam/io/xlang/bigtableio"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/register"
-	_ "github.com/apache/beam/sdks/v2/go/pkg/beam/runners/dataflow"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/testing/passert"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/testing/ptest"
-	"github.com/apache/beam/sdks/v2/go/test/integration"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/io/bigtableio"
+	xlangbt "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/io/xlang/bigtableio"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/register"
+	_ "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/runners/dataflow"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/testing/passert"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/testing/ptest"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/test/integration"
 )
 
 var expansionAddr string

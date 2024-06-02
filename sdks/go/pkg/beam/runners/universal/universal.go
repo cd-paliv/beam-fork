@@ -20,18 +20,18 @@ package universal
 import (
 	"context"
 
-	"github.com/apache/beam/sdks/v2/go/pkg/beam"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/runtime/graphx"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/runtime/xlangx"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/runtime/graphx"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/runtime/xlangx"
 
 	// Importing to get the side effect of the remote execution hook. See init().
-	_ "github.com/apache/beam/sdks/v2/go/pkg/beam/core/runtime/harness/init"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/internal/errors"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/log"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/options/jobopts"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/runners/universal/extworker"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/runners/universal/runnerlib"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/runners/vet"
+	_ "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/runtime/harness/init"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/internal/errors"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/log"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/options/jobopts"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/runners/universal/extworker"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/runners/universal/runnerlib"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/runners/vet"
 	"github.com/golang/protobuf/proto"
 )
 

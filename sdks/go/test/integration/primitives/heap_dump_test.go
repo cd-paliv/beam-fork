@@ -22,10 +22,10 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/io/filesystem"
-	_ "github.com/apache/beam/sdks/v2/go/pkg/beam/io/filesystem/gcs"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/testing/ptest"
-	"github.com/apache/beam/sdks/v2/go/test/integration"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/io/filesystem"
+	_ "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/io/filesystem/gcs"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/testing/ptest"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/test/integration"
 )
 
 func TestOomParDo(t *testing.T) {

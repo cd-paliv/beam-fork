@@ -22,8 +22,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/runtime"
-	v1pb "github.com/apache/beam/sdks/v2/go/pkg/beam/core/runtime/graphx/v1"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/runtime"
+	v1pb "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/runtime/graphx/v1"
 )
 
 func TestEncodeType(t *testing.T) {
