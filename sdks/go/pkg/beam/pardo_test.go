@@ -23,13 +23,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/graph"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/graph/window"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/graph/window/trigger"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/runtime/graphx"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/typex"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/util/reflectx"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/options/jobopts"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/graph"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/graph/window"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/graph/window/trigger"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/runtime/graphx"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/typex"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/util/reflectx"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/options/jobopts"
 )
 
 func init() {

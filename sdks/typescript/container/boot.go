@@ -25,10 +25,10 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/container/tools"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/artifact"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/util/execx"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/util/grpcx"
+	"github.com/apache/beam/sdks/v2/go/container/tools"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/artifact"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/util/execx"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/util/grpcx"
 )
 
 var (

@@ -23,15 +23,15 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/examples/xlang"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam"
-	_ "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/runners/dataflow"
-	_ "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/runners/flink"
-	_ "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/runners/samza"
-	_ "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/runners/spark"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/testing/passert"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/testing/ptest"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/test/integration"
+	"github.com/apache/beam/sdks/v2/go/examples/xlang"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam"
+	_ "github.com/apache/beam/sdks/v2/go/pkg/beam/runners/dataflow"
+	_ "github.com/apache/beam/sdks/v2/go/pkg/beam/runners/flink"
+	_ "github.com/apache/beam/sdks/v2/go/pkg/beam/runners/samza"
+	_ "github.com/apache/beam/sdks/v2/go/pkg/beam/runners/spark"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/testing/passert"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/testing/ptest"
+	"github.com/apache/beam/sdks/v2/go/test/integration"
 )
 
 var expansionAddr string // Populate with expansion address labelled "test".

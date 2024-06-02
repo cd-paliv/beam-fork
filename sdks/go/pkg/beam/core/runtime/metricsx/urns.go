@@ -20,8 +20,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/graph/coder"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/graph/mtime"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/graph/coder"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/graph/mtime"
 )
 
 // Urn is an enum type for representing urns of metrics and monitored states.

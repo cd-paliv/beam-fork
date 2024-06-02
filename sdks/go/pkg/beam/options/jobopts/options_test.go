@@ -21,8 +21,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/options/resource"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/core"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/options/resource"
 )
 
 func TestGetEndpoint(t *testing.T) {

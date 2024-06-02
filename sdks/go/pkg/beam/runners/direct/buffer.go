@@ -19,9 +19,9 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/runtime/exec"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/typex"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/log"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/runtime/exec"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/typex"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/log"
 )
 
 // buffer buffers all input and notifies on FinishBundle. It is also a SideInputAdapter.

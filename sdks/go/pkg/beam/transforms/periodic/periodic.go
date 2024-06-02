@@ -21,12 +21,12 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/graph/mtime"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/graph/window"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/sdf"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/io/rtrackers/offsetrange"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/register"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/graph/mtime"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/graph/window"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/sdf"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/io/rtrackers/offsetrange"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/register"
 )
 
 func init() {

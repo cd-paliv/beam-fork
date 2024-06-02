@@ -27,10 +27,10 @@ import (
 	"strings"
 
 	"cloud.google.com/go/datastore"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/runtime"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/internal/errors"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/log"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/runtime"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/internal/errors"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/log"
 	"google.golang.org/api/iterator"
 	"google.golang.org/api/option"
 )

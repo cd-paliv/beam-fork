@@ -16,15 +16,14 @@
 package spannerio
 
 import (
+	"cloud.google.com/go/spanner/apiv1/spannerpb"
 	"context"
 	"fmt"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam"
 	"reflect"
 
-	"cloud.google.com/go/spanner/apiv1/spannerpb"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam"
-
 	"cloud.google.com/go/spanner"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/register"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/register"
 )
 
 func init() {

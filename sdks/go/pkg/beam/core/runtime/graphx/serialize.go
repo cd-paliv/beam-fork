@@ -21,18 +21,18 @@ import (
 
 	"time"
 
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/funcx"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/graph"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/graph/coder"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/graph/window"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/runtime"
-	v1pb "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/runtime/graphx/v1"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/state"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/timers"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/typex"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/util/jsonx"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/util/reflectx"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/internal/errors"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/funcx"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/graph"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/graph/coder"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/graph/window"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/runtime"
+	v1pb "github.com/apache/beam/sdks/v2/go/pkg/beam/core/runtime/graphx/v1"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/state"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/timers"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/typex"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/util/jsonx"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/util/reflectx"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/internal/errors"
 )
 
 var genFnType = reflect.TypeOf((*func(string, reflect.Type, []byte) reflectx.Func)(nil)).Elem()

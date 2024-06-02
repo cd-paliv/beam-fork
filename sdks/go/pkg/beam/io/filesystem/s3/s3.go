@@ -23,11 +23,11 @@ import (
 	"path/filepath"
 	"time"
 
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/io/filesystem"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/util/fsx"
 	"github.com/aws/aws-sdk-go-v2/aws"
 	"github.com/aws/aws-sdk-go-v2/config"
 	"github.com/aws/aws-sdk-go-v2/service/s3"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/io/filesystem"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/util/fsx"
 )
 
 func init() {

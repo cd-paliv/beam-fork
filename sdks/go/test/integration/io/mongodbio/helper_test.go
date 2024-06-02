@@ -19,7 +19,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/test/integration/internal/containers"
+	"github.com/apache/beam/sdks/v2/go/test/integration/internal/containers"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 	"go.mongodb.org/mongo-driver/mongo"

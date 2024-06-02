@@ -16,7 +16,7 @@
 package protox
 
 import (
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/internal/errors"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/internal/errors"
 	"github.com/golang/protobuf/proto"
 	protobuf "github.com/golang/protobuf/ptypes/any"
 	protobufw "github.com/golang/protobuf/ptypes/wrappers"

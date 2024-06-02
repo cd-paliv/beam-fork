@@ -33,10 +33,10 @@ import (
 	"sync/atomic"
 	"time"
 
-	fnpb "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/model/fnexecution_v1"
-	jobpb "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/model/jobmanagement_v1"
-	pipepb "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/model/pipeline_v1"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/runners/prism/internal/urns"
+	fnpb "github.com/apache/beam/sdks/v2/go/pkg/beam/model/fnexecution_v1"
+	jobpb "github.com/apache/beam/sdks/v2/go/pkg/beam/model/jobmanagement_v1"
+	pipepb "github.com/apache/beam/sdks/v2/go/pkg/beam/model/pipeline_v1"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/runners/prism/internal/urns"
 	"golang.org/x/exp/slog"
 	"google.golang.org/protobuf/types/known/structpb"
 )

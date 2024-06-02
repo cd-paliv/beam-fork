@@ -21,9 +21,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/metrics"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/log"
-	fnpb "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/model/fnexecution_v1"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/metrics"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/log"
+	fnpb "github.com/apache/beam/sdks/v2/go/pkg/beam/model/fnexecution_v1"
 )
 
 func TestLogger(t *testing.T) {

@@ -17,9 +17,9 @@
 package synthetic
 
 import (
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/io/synthetic"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/testing/passert"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/io/synthetic"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/testing/passert"
 )
 
 // SimplePipeline creates a very simple synthetic pipeline to test that basic

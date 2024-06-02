@@ -20,13 +20,13 @@ package prism
 import (
 	"context"
 
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam"
-	jobpb "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/model/jobmanagement_v1"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/options/jobopts"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/runners/prism/internal"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/runners/prism/internal/jobservices"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/runners/prism/internal/web"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/runners/universal"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam"
+	jobpb "github.com/apache/beam/sdks/v2/go/pkg/beam/model/jobmanagement_v1"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/options/jobopts"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/runners/prism/internal"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/runners/prism/internal/jobservices"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/runners/prism/internal/web"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/runners/universal"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 )

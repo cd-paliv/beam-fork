@@ -138,7 +138,7 @@ func TestSampler_TwoPTransforms(t *testing.T) {
 
 // goos: darwin
 // goarch: amd64
-// pkg: github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/metrics
+// pkg: github.com/apache/beam/sdks/v2/go/pkg/beam/core/metrics
 // cpu: Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz
 // BenchmarkMsec_SetPTransformState-12    	77735638	        15.36 ns/op	       0 B/op	       0 allocs/op
 func BenchmarkMsec_SetPTransformState(b *testing.B) {
@@ -154,7 +154,7 @@ func BenchmarkMsec_SetPTransformState(b *testing.B) {
 
 // goos: darwin
 // goarch: amd64
-// pkg: github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/metrics
+// pkg: github.com/apache/beam/sdks/v2/go/pkg/beam/core/metrics
 // cpu: Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz
 // BenchmarkMsec_Sample-12    	37351743	        30.41 ns/op	       0 B/op	       0 allocs/op
 func BenchmarkMsec_Sample(b *testing.B) {
@@ -174,7 +174,7 @@ func BenchmarkMsec_Sample(b *testing.B) {
 
 // goos: darwin
 // goarch: amd64
-// pkg: github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/metrics
+// pkg: github.com/apache/beam/sdks/v2/go/pkg/beam/core/metrics
 // cpu: Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz
 // BenchmarkMsec_Combined-12    	27496028	        38.26 ns/op	       0 B/op	       0 allocs/op
 func BenchmarkMsec_Combined(b *testing.B) {

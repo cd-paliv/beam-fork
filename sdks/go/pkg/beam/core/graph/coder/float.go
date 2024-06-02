@@ -20,7 +20,7 @@ import (
 	"io"
 	"math"
 
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/util/ioutilx"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/util/ioutilx"
 )
 
 // EncodeSinglePrecisionFloat encodes a float32 in big endian format.

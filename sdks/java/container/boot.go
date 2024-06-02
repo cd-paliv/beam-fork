@@ -29,13 +29,13 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/container/tools"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/artifact"
-	fnpb "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/model/fnexecution_v1"
-	pipepb "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/model/pipeline_v1"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/util/execx"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/util/grpcx"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/util/syscallx"
+	"github.com/apache/beam/sdks/v2/go/container/tools"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/artifact"
+	fnpb "github.com/apache/beam/sdks/v2/go/pkg/beam/model/fnexecution_v1"
+	pipepb "github.com/apache/beam/sdks/v2/go/pkg/beam/model/pipeline_v1"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/util/execx"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/util/grpcx"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/util/syscallx"
 	"github.com/golang/protobuf/proto"
 )
 
@@ -267,9 +267,9 @@ func makePipelineOptionsFile(options string) error {
 // it returns 70% of the physical memory on the machine. If it cannot determine
 // that value, it returns 1GB. This is an imperfect heuristic. It aims to
 // ensure there is memory for non-heap use and other overhead, while also not
-// underutilizing the machine. if set_recommended_max_xmx experiment is enabled,
-// sets xmx to 32G. Under 32G JVM enables CompressedOops. CompressedOops
-// utilizes memory more efficiently, and has positive impact on GC performance
+// underutilizing the machine. if set_recommended_max_xmx experiment is enabled, 
+// sets xmx to 32G. Under 32G JVM enables CompressedOops. CompressedOops 
+// utilizes memory more efficiently, and has positive impact on GC performance 
 // and cache hit rate.
 func heapSizeLimit(info *fnpb.ProvisionInfo, setRecommendedMaxXmx bool) uint64 {
 	if setRecommendedMaxXmx {

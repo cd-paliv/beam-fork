@@ -21,10 +21,10 @@ import (
 	"testing"
 
 	"cloud.google.com/go/spanner"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/testing/passert"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/testing/ptest"
-	spannertest "github.com/cd-paliv/beam-fork/sdks/v3/go/test/integration/io/spannerio"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/testing/passert"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/testing/ptest"
+	spannertest "github.com/apache/beam/sdks/v2/go/test/integration/io/spannerio"
 )
 
 func TestMain(m *testing.M) {

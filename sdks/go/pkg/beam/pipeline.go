@@ -18,8 +18,8 @@ package beam
 import (
 	"context"
 
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/graph"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/metrics"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/graph"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/metrics"
 )
 
 // Scope is a hierarchical grouping for composite transforms. Scopes can be

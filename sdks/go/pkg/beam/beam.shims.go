@@ -23,11 +23,11 @@ import (
 	"reflect"
 
 	// Library imports
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/runtime"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/runtime/exec"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/sdf"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/typex"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/util/reflectx"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/runtime"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/runtime/exec"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/sdf"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/typex"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/util/reflectx"
 )
 
 func init() {

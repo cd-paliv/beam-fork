@@ -29,11 +29,11 @@ Ensure you have a recent version of Go: https://go.dev/doc/install
 
 Until Beam v2.49.0 is released:
 
-`go install "github.com/cd-paliv/beam-fork/sdks/v3/go/cmd/prism@master"`
+`go install "github.com/apache/beam/sdks/v2/go/cmd/prism@master"`
 
 After that release
 
-`go install "github.com/cd-paliv/beam-fork/sdks/v3/go/cmd/prism@latest"`
+`go install "github.com/apache/beam/sdks/v2/go/cmd/prism@latest"`
 
 Then calling `prism` on the command line will start up a JobManagement server on port 8073, and a web UI on 8074. Submit portable Beam jobs to the runner in Loopback mode (`--environment_type=LOOPBACK`) so the runner can provided bundles to the SDK process.
 

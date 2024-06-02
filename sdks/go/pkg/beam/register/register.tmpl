@@ -121,10 +121,10 @@ import (
     "fmt"
 	"reflect"
 
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/runtime"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/runtime/graphx/schema"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/typex"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/util/reflectx"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/runtime"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/runtime/graphx/schema"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/typex"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/util/reflectx"
 )
 {{$processElementMaxOut := 5}}{{$processElementMaxIn := 10}}{{$startFinishBundleOutRange := 2}}{{$startFinishBundleInRange := 8}}
 {{template "BuildWrapper_StartFinishBundle" (dict "func" "startBundle" "startFinishBundleMaxIn" $startFinishBundleInRange "processElementMaxIn" $processElementMaxIn)}}{{template "BuildWrapper_StartFinishBundle" (dict "func" "finishBundle" "startFinishBundleMaxIn" $startFinishBundleInRange "processElementMaxIn" $processElementMaxIn)}}{{template "BuildWrapper_SetupTeardown" (dict "func" "setup")}}{{template "BuildWrapper_SetupTeardown" (dict "func" "teardown")}}

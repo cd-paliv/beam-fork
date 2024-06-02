@@ -18,8 +18,8 @@ package harnessopts
 import (
 	"testing"
 
-	_ "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/runtime/harness" // Imports the cache hook
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/util/hooks"
+	_ "github.com/apache/beam/sdks/v2/go/pkg/beam/core/runtime/harness" // Imports the cache hook
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/util/hooks"
 )
 
 func TestHeapDumpFrequency(t *testing.T) {

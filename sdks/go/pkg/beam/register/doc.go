@@ -13,7 +13,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-//go:generate go install github.com/cd-paliv/beam-fork/sdks/v3/go/cmd/specialize
+//go:generate go install github.com/apache/beam/sdks/v2/go/cmd/specialize
 //go:generate specialize --package=register --input=register.tmpl --x=data,universals --imports=typex
 //go:generate go fmt
 

@@ -19,8 +19,8 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/typex"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/util/ioutilx"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/typex"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/util/ioutilx"
 )
 
 // EncodePane encodes a typex.PaneInfo.

@@ -46,12 +46,12 @@ import (
 
 // Beam imports that the generated code requires.
 var (
-	ExecImport     = "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/runtime/exec"
-	TypexImport    = "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/typex"
-	ReflectxImport = "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/util/reflectx"
-	RuntimeImport  = "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/runtime"
-	SchemaImport   = "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/runtime/graphx/schema"
-	SdfImport      = "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/sdf"
+	ExecImport     = "github.com/apache/beam/sdks/v2/go/pkg/beam/core/runtime/exec"
+	TypexImport    = "github.com/apache/beam/sdks/v2/go/pkg/beam/core/typex"
+	ReflectxImport = "github.com/apache/beam/sdks/v2/go/pkg/beam/core/util/reflectx"
+	RuntimeImport  = "github.com/apache/beam/sdks/v2/go/pkg/beam/core/runtime"
+	SchemaImport   = "github.com/apache/beam/sdks/v2/go/pkg/beam/core/runtime/graphx/schema"
+	SdfImport      = "github.com/apache/beam/sdks/v2/go/pkg/beam/core/sdf"
 )
 
 func validateBeamImports() {

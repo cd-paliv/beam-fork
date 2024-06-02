@@ -20,7 +20,7 @@ import (
 	"reflect"
 	"testing"
 
-	jobpb "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/model/jobmanagement_v1"
+	jobpb "github.com/apache/beam/sdks/v2/go/pkg/beam/model/jobmanagement_v1"
 )
 
 func TestRegistry(t *testing.T) {

@@ -21,9 +21,9 @@ import (
 	"reflect"
 	"sync"
 
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/funcx"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/sdf"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/typex"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/funcx"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/sdf"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/typex"
 )
 
 // ReusableEmitter is a resettable value needed to hold the implicit context and

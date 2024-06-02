@@ -16,10 +16,10 @@
 package beam
 
 import (
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/graph"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/runtime/graphx"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/runtime/xlangx"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/internal/errors"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/graph"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/runtime/graphx"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/runtime/xlangx"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/internal/errors"
 )
 
 // UnnamedInput is a helper function for passing single unnamed inputs to

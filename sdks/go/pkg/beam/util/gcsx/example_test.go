@@ -20,7 +20,7 @@ import (
 	"time"
 
 	"cloud.google.com/go/storage"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/util/gcsx"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/util/gcsx"
 )
 
 func Example() {

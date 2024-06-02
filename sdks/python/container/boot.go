@@ -35,12 +35,12 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/container/tools"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/artifact"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/runtime/xlangx/expansionx"
-	pipepb "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/model/pipeline_v1"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/util/execx"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/util/grpcx"
+	"github.com/apache/beam/sdks/v2/go/container/tools"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/artifact"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/runtime/xlangx/expansionx"
+	pipepb "github.com/apache/beam/sdks/v2/go/pkg/beam/model/pipeline_v1"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/util/execx"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/util/grpcx"
 	"github.com/golang/protobuf/jsonpb"
 	"github.com/golang/protobuf/proto"
 )

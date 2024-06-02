@@ -19,7 +19,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/log"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/log"
 )
 
 var (

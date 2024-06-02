@@ -18,10 +18,9 @@ package spannerio
 import (
 	"context"
 	"fmt"
+	"google.golang.org/api/option/internaloption"
 	"regexp"
 	"testing"
-
-	"google.golang.org/api/option/internaloption"
 
 	"cloud.google.com/go/spanner"
 	database "cloud.google.com/go/spanner/admin/database/apiv1"
@@ -34,7 +33,7 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/test/integration/internal/containers"
+	"github.com/apache/beam/sdks/v2/go/test/integration/internal/containers"
 )
 
 const (

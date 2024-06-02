@@ -25,14 +25,14 @@ import (
 	"testing"
 	"time"
 
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/register"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/register"
 
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/io/xlang/bigqueryio"
-	_ "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/runners/dataflow"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/testing/passert"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/testing/ptest"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/test/integration"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/io/xlang/bigqueryio"
+	_ "github.com/apache/beam/sdks/v2/go/pkg/beam/runners/dataflow"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/testing/passert"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/testing/ptest"
+	"github.com/apache/beam/sdks/v2/go/test/integration"
 )
 
 func init() {

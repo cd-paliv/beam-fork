@@ -21,18 +21,18 @@ import (
 	"strings"
 	"time"
 
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/runtime"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/runtime/graphx"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/internal/errors"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/log"
-	pipepb "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/model/pipeline_v1"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/core"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/runtime"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/runtime/graphx"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/internal/errors"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/log"
+	pipepb "github.com/apache/beam/sdks/v2/go/pkg/beam/model/pipeline_v1"
 	"golang.org/x/oauth2/google"
 	df "google.golang.org/api/dataflow/v1b3"
 	"google.golang.org/protobuf/proto"
 
 	// Importing to get the side effect of the remote execution hook. See init().
-	_ "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/runtime/harness/init"
+	_ "github.com/apache/beam/sdks/v2/go/pkg/beam/core/runtime/harness/init"
 )
 
 // JobOptions capture the various options for submitting jobs

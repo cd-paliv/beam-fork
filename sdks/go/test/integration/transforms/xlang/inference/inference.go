@@ -16,12 +16,12 @@
 package inference
 
 import (
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam"
-	_ "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/runners/dataflow"
-	_ "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/runners/flink"
-	_ "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/runners/universal"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/testing/passert"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/transforms/xlang/inference"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam"
+	_ "github.com/apache/beam/sdks/v2/go/pkg/beam/runners/dataflow"
+	_ "github.com/apache/beam/sdks/v2/go/pkg/beam/runners/flink"
+	_ "github.com/apache/beam/sdks/v2/go/pkg/beam/runners/universal"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/testing/passert"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/transforms/xlang/inference"
 )
 
 func SklearnInference(expansionAddr string) *beam.Pipeline {

@@ -19,14 +19,14 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/metrics"
-	_ "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/runners/dataflow"
-	_ "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/runners/flink"
-	_ "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/runners/samza"
-	_ "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/runners/spark"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/testing/ptest"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/test/integration"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/metrics"
+	_ "github.com/apache/beam/sdks/v2/go/pkg/beam/runners/dataflow"
+	_ "github.com/apache/beam/sdks/v2/go/pkg/beam/runners/flink"
+	_ "github.com/apache/beam/sdks/v2/go/pkg/beam/runners/samza"
+	_ "github.com/apache/beam/sdks/v2/go/pkg/beam/runners/spark"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/testing/ptest"
+	"github.com/apache/beam/sdks/v2/go/test/integration"
 )
 
 func TestWordCount(t *testing.T) {

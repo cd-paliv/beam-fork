@@ -18,8 +18,8 @@ package primitives
 import (
 	"testing"
 
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/testing/ptest"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/test/integration"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/testing/ptest"
+	"github.com/apache/beam/sdks/v2/go/test/integration"
 )
 
 func TestValueState(t *testing.T) {

@@ -22,7 +22,7 @@ import (
 	"math"
 	"reflect"
 
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo"
 )

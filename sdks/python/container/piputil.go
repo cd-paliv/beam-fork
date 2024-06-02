@@ -27,9 +27,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/container/tools"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/runtime/xlangx/expansionx"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/util/execx"
+	"github.com/apache/beam/sdks/v2/go/container/tools"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/runtime/xlangx/expansionx"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/util/execx"
 )
 
 const unrecoverableURL string = "https://beam.apache.org/documentation/sdks/python-unrecoverable-errors/index.html#pip-dependency-resolution-failures"

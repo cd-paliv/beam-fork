@@ -23,8 +23,8 @@ import (
 	"fmt"
 	"log"
 
-	jobpb "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/model/jobmanagement_v1"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/runners/prism"
+	jobpb "github.com/apache/beam/sdks/v2/go/pkg/beam/model/jobmanagement_v1"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/runners/prism"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 )

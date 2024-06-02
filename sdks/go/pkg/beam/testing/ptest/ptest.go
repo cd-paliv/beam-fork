@@ -23,14 +23,14 @@ import (
 	"os"
 	"testing"
 
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/runners" // common runner flag.
+	"github.com/apache/beam/sdks/v2/go/pkg/beam"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/runners" // common runner flag.
 
 	// ptest uses the prism runner to execute pipelines by default.
 	// but includes the direct runner for legacy fallback reasons to
 	// support users overriding the default back to the direct runner.
-	_ "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/runners/direct"
-	_ "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/runners/prism"
+	_ "github.com/apache/beam/sdks/v2/go/pkg/beam/runners/direct"
+	_ "github.com/apache/beam/sdks/v2/go/pkg/beam/runners/prism"
 )
 
 // Create creates a pipeline and a PCollection with the given values.
@@ -142,7 +142,7 @@ func BuildAndRun(t *testing.T, build func(s beam.Scope)) beam.PipelineResult {
 // To enable this behavior, _ import the desired runner, and set the flag
 // accordingly. For example:
 //
-//	import _ "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/runners/flink"
+//	import _ "github.com/apache/beam/sdks/v2/go/pkg/runners/flink"
 //
 //	func TestMain(m *testing.M) {
 //		ptest.Main(m)
