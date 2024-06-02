@@ -7,7 +7,7 @@ Response:
 Pub/Sub is supported in the following Beam SDKs:
 * [Java](https://beam.apache.org/releases/javadoc/current/org/apache/beam/sdk/io/gcp/pubsub/PubsubIO.html)
 * [Python](https://beam.apache.org/releases/pydoc/current/apache_beam.io.gcp.pubsub.html)
-* [Go](https://pkg.go.dev/github.com/apache/beam/sdks/v2/go/pkg/beam/io/pubsubio)
+* [Go](https://pkg.go.dev/github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/io/pubsubio)
 * [Typescript](https://github.com/apache/beam/blob/master/sdks/typescript/src/apache_beam/io/pubsub.ts) (through X Language)
 
 To get started with Pub/Sub and Apache Beam, refer to the [Dataflow Cookbook GitHub repository](https://github.com/GoogleCloudPlatform/dataflow-cookbook). The repository provides Python code examples that [read](https://github.com/GoogleCloudPlatform/dataflow-cookbook/blob/main/Python/pubsub/read_pubsub_multiple.py) and [write](https://github.com/GoogleCloudPlatform/dataflow-cookbook/blob/main/Python/pubsub/write_pubsub.py) data from and to Pub/Sub.

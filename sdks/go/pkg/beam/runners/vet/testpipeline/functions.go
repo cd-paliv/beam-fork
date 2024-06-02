@@ -15,9 +15,9 @@
 
 package testpipeline
 
-import "github.com/apache/beam/sdks/v2/go/pkg/beam"
+import "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam"
 
-//go:generate go install github.com/apache/beam/sdks/v2/go/cmd/starcgen
+//go:generate go install github.com/cd-paliv/beam-fork/sdks/v3/go/cmd/starcgen
 //go:generate starcgen --package=testpipeline --identifiers=VFn,KvFn,KvEmitFn,SCombine
 //go:generate go fmt
 

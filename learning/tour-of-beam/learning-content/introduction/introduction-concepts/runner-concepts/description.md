@@ -33,7 +33,7 @@ Additionally, you can read more about the Direct Runner [here](https://beam.apac
 #### Run example
 
 ```
-$ go install github.com/apache/beam/sdks/v2/go/examples/wordcount
+$ go install github.com/cd-paliv/beam-fork/sdks/v3/go/examples/wordcount
 $ wordcount --input <PATH_TO_INPUT_FILE> --output counts
 ```
 {{end}}
@@ -84,7 +84,7 @@ Additionally, you can read more about the Dataflow Runner [here](https://beam.ap
 #### Run example
 {{if (eq .Sdk "go")}}
 ```
-$ go install github.com/apache/beam/sdks/v2/go/examples/wordcount
+$ go install github.com/cd-paliv/beam-fork/sdks/v3/go/examples/wordcount
 # As part of the initial setup, for non linux users - install package unix before run
 $ go get -u golang.org/x/sys/unix
 $ wordcount --input gs://dataflow-samples/shakespeare/kinglear.txt \
@@ -168,12 +168,12 @@ Additionally, you can read more about the Apache Flink Runner [here](https://bea
 
 Need import:
 ```
-"github.com/apache/beam/sdks/v2/go/pkg/beam/runners/flink"
+"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/runners/flink"
 ```
 
 It is necessary to give an endpoint where the runner is raised with `--endpoint`:
 ```
-$ go install github.com/apache/beam/sdks/v2/go/examples/wordcount
+$ go install github.com/cd-paliv/beam-fork/sdks/v3/go/examples/wordcount
 # As part of the initial setup, for non linux users - install package unix before run
 $ go get -u golang.org/x/sys/unix
 $ wordcount --input gs://dataflow-samples/shakespeare/kinglear.txt \
@@ -271,12 +271,12 @@ Additionally, you can read more about the Apache Spark Runner [here](https://bea
 
 Need import:
 ```
-"github.com/apache/beam/sdks/v2/go/pkg/beam/runners/spark"
+"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/runners/spark"
 ```
 
 It is necessary to give an endpoint where the runner is raised with `--endpoint`:
 ```
-$ go install github.com/apache/beam/sdks/v2/go/examples/wordcount
+$ go install github.com/cd-paliv/beam-fork/sdks/v3/go/examples/wordcount
 # As part of the initial setup, for non linux users - install package unix before run
 $ go get -u golang.org/x/sys/unix
 $ wordcount --input gs://dataflow-samples/shakespeare/kinglear.txt \
@@ -412,12 +412,12 @@ Additionally, you can read more about the Samza Runner [here](https://beam.apach
 
 Need import:
 ```
-"github.com/apache/beam/sdks/v2/go/pkg/beam/runners/samza"
+"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/runners/samza"
 ```
 
 It is necessary to give an endpoint where the runner is raised with `--endpoint`:
 ```
-$ go install github.com/apache/beam/sdks/v2/go/examples/wordcount
+$ go install github.com/cd-paliv/beam-fork/sdks/v3/go/examples/wordcount
 # As part of the initial setup, for non linux users - install package unix before run
 $ go get -u golang.org/x/sys/unix
 $ wordcount --input gs://dataflow-samples/shakespeare/kinglear.txt \

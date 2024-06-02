@@ -5,7 +5,7 @@ Response:
 The [Oracle Java Database Connectivity (JDBC) API](https://docs.oracle.com/javase/8/docs/technotes/guides/jdbc/) is a Java API for connecting to relational databases. Apache Beam supports reading and writing data with JDBC using the `ReadFromJdbc` and `WriteToJdbc` transforms in the `JdbcIO` module. For more information, see the JdbcIO connector documentation for the following languages:
 * [Java](https://beam.apache.org/releases/javadoc/current/org/apache/beam/sdk/io/jdbc/JdbcIO.html)
 * [Python (using cross-language transforms)](https://beam.apache.org/releases/pydoc/current/apache_beam.io.jdbc.html)
-* [Go (using cross-language transforms)](https://pkg.go.dev/github.com/apache/beam/sdks/v2/go/pkg/beam/io/xlang/jdbcio)
+* [Go (using cross-language transforms)](https://pkg.go.dev/github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/io/xlang/jdbcio)
 
 To get started with JDBC and Apache Beam, refer to the [Dataflow Cookbook repository](https://github.com/GoogleCloudPlatform/dataflow-cookbook).
 

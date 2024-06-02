@@ -15,11 +15,11 @@
 
 package task
 
-import "github.com/apache/beam/sdks/v2/go/pkg/beam"
+import "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam"
 
 func ApplyTransform(s beam.Scope, input beam.PCollection) beam.PCollection {
 	return beam.ParDo(s, func(element int, emit func(int)) {
-		if element % 2 == 1 {
+		if element%2 == 1 {
 			emit(element)
 		}
 	}, input)

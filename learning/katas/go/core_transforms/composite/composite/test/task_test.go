@@ -16,11 +16,12 @@
 package test
 
 import (
+	"testing"
+
 	"beam.apache.org/learning/katas/core_transforms/composite/composite/pkg/common"
 	"beam.apache.org/learning/katas/core_transforms/composite/composite/pkg/task"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/testing/ptest"
-	"testing"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/testing/ptest"
 )
 
 const (
@@ -29,7 +30,7 @@ const (
 
 type testCase struct {
 	input beam.PCollection
-	want map[string]int
+	want  map[string]int
 }
 
 func TestApplyTransform(t *testing.T) {
@@ -67,7 +68,7 @@ func TestApplyTransform(t *testing.T) {
 			t.Errorf("no augmented scope with label %s", wantAugmentedScopeLabel)
 		}
 
-		beam.ParDo(s, func(gotCharacter string, got int, emit func(bool)){
+		beam.ParDo(s, func(gotCharacter string, got int, emit func(bool)) {
 			s = s.Scope("TestApplyTransform")
 			want := tt.want[gotCharacter]
 			if got != want {
@@ -92,4 +93,3 @@ func hasExpectedAugmentedScope(p *beam.Pipeline) bool {
 	}
 	return false
 }
-

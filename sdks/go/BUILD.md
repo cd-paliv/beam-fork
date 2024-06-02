@@ -63,7 +63,7 @@ changes and execute tests from within the module directory (`<repo>/sdks/...`).
 
 Go users can just `go get` the code directly. For example:
 ```
-go get github.com/apache/beam/sdks/v2/go/pkg/beam
+go get github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam
 ```
 Developers must invoke Go for cross-compilation manually, if desired.
 
@@ -73,7 +73,7 @@ Consult `pkg/beam/model/PROTOBUF.md`.
 If you make changes to .tmpl files, then add the specialize tool to your path.
 You can install specialize using:
 ```
-go get github.com/apache/beam/sdks/v2/go/cmd/specialize
+go get github.com/cd-paliv/beam-fork/sdks/v3/go/cmd/specialize
 ```
 Add it to your path:
 ```

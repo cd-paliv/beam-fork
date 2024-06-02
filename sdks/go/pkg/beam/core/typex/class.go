@@ -21,8 +21,8 @@ import (
 	"unicode"
 	"unicode/utf8"
 
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/util/reflectx"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/internal/errors"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/util/reflectx"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/internal/errors"
 )
 
 // Class is the type "class" of data as distinguished by the runtime. The class

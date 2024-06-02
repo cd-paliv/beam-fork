@@ -19,8 +19,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/graph/mtime"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/typex"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/graph/mtime"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/typex"
 )
 
 type winStrat interface {

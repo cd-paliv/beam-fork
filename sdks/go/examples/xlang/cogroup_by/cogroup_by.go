@@ -29,16 +29,16 @@ import (
 	"log"
 	"sort"
 
-	"github.com/apache/beam/sdks/v2/go/examples/xlang"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/register"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/testing/passert"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/x/beamx"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/examples/xlang"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/register"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/testing/passert"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/x/beamx"
 
 	// Imports to enable correct filesystem access and runner setup in LOOPBACK mode
-	_ "github.com/apache/beam/sdks/v2/go/pkg/beam/io/filesystem/gcs"
-	_ "github.com/apache/beam/sdks/v2/go/pkg/beam/io/filesystem/local"
-	_ "github.com/apache/beam/sdks/v2/go/pkg/beam/runners/universal"
+	_ "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/io/filesystem/gcs"
+	_ "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/io/filesystem/local"
+	_ "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/runners/universal"
 )
 
 var (

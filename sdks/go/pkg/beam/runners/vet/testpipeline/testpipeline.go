@@ -20,7 +20,7 @@
 package testpipeline
 
 import (
-	"github.com/apache/beam/sdks/v2/go/pkg/beam"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam"
 )
 
 // Performant constructs a performant pipeline.

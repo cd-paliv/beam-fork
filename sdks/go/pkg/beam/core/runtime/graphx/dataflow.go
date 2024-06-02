@@ -18,13 +18,13 @@ package graphx
 import (
 	"reflect"
 
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/graph/coder"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/runtime/graphx/schema"
-	v1pb "github.com/apache/beam/sdks/v2/go/pkg/beam/core/runtime/graphx/v1"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/typex"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/util/protox"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/internal/errors"
-	pipepb "github.com/apache/beam/sdks/v2/go/pkg/beam/model/pipeline_v1"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/graph/coder"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/runtime/graphx/schema"
+	v1pb "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/runtime/graphx/v1"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/typex"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/util/protox"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/internal/errors"
+	pipepb "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/model/pipeline_v1"
 )
 
 // TODO(herohde) 7/17/2018: move CoderRef to dataflowlib once Dataflow

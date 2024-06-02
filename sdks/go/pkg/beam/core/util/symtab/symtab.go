@@ -25,7 +25,7 @@ import (
 	"reflect"
 	"runtime"
 
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/internal/errors"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/internal/errors"
 )
 
 // SymbolTable allows for mapping between symbols and their addresses.

@@ -27,8 +27,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/runtime/exec"
-	fnpb "github.com/apache/beam/sdks/v2/go/pkg/beam/model/fnexecution_v1"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/runtime/exec"
+	fnpb "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/model/fnexecution_v1"
 )
 
 const extraData = 2

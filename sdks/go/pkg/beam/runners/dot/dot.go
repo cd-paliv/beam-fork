@@ -23,9 +23,9 @@ import (
 	"flag"
 	"os"
 
-	"github.com/apache/beam/sdks/v2/go/pkg/beam"
-	dotlib "github.com/apache/beam/sdks/v2/go/pkg/beam/core/util/dot"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/internal/errors"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam"
+	dotlib "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/util/dot"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/internal/errors"
 )
 
 func init() {

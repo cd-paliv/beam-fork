@@ -20,10 +20,10 @@ import (
 	"log"
 	"time"
 
-	"github.com/apache/beam/sdks/v2/go/pkg/beam"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/io/fileio"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/x/beamx"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/x/debug"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/io/fileio"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/x/beamx"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/x/debug"
 )
 
 func ExampleMatchFiles() {

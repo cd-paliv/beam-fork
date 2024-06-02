@@ -16,7 +16,7 @@
 // Package window contains window representation, windowing strategies and utilities.
 package window
 
-import "github.com/apache/beam/sdks/v2/go/pkg/beam/core/graph/window/trigger"
+import "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/graph/window/trigger"
 
 type AccumulationMode string
 

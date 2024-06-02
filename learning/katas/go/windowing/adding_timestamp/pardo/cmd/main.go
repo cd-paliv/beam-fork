@@ -16,13 +16,14 @@
 package main
 
 import (
+	"context"
+	"time"
+
 	"beam.apache.org/learning/katas/windowing/adding_timestamp/pardo/pkg/common"
 	"beam.apache.org/learning/katas/windowing/adding_timestamp/pardo/pkg/task"
-	"context"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/log"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/x/beamx"
-	"time"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/log"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/x/beamx"
 )
 
 func main() {
@@ -34,8 +35,8 @@ func main() {
 
 	result := task.ApplyTransform(s, input)
 
-	beam.ParDo0(s, func(et beam.EventTime, commit task.Commit){
-		t := time.Unix(0, int64(et.Milliseconds()) * 1e6)
+	beam.ParDo0(s, func(et beam.EventTime, commit task.Commit) {
+		t := time.Unix(0, int64(et.Milliseconds())*1e6)
 		log.Infof(ctx, "time: %s, message: %s", t.Format("03:04"), commit)
 	}, result)
 

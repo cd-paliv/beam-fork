@@ -16,22 +16,23 @@
 package test
 
 import (
-	"beam.apache.org/learning/katas/core_transforms/map/pardo_onetomany/pkg/task"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/testing/passert"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/testing/ptest"
 	"testing"
+
+	"beam.apache.org/learning/katas/core_transforms/map/pardo_onetomany/pkg/task"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/testing/passert"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/testing/ptest"
 )
 
 func TestTask(t *testing.T) {
 	p, s := beam.NewPipelineWithRoot()
 	tests := []struct {
 		input beam.PCollection
-		want []interface{}
+		want  []interface{}
 	}{
 		{
 			input: beam.Create(s, "Hello Beam. It is awesome."),
-			want: []interface{}{"Hello", "Beam.", "It", "is", "awesome."},
+			want:  []interface{}{"Hello", "Beam.", "It", "is", "awesome."},
 		},
 	}
 	for _, tt := range tests {

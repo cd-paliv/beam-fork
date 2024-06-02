@@ -21,8 +21,8 @@ import (
 	"os"
 	"testing"
 
-	jobpb "github.com/apache/beam/sdks/v2/go/pkg/beam/model/jobmanagement_v1"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/util/grpcx"
+	jobpb "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/model/jobmanagement_v1"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/util/grpcx"
 	"google.golang.org/grpc"
 )
 

@@ -14,7 +14,7 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- */
+*/
 
 // beam-playground:
 //   name: write-table-schema
@@ -30,53 +30,55 @@
 package main
 
 import (
-  "log"
-    /*
-    "context"
-    beam_log "github.com/apache/beam/sdks/v2/go/pkg/beam/log"
-    "github.com/apache/beam/sdks/v2/go/pkg/beam/x/beamx"
-    "cloud.google.com/go/bigquery"
-    "github.com/apache/beam/sdks/v2/go/pkg/beam"
-    "github.com/apache/beam/sdks/v2/go/pkg/beam/io/bigqueryio"
-    */)
+	"log"
+	/*
+	   "context"
+	   beam_log "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/log"
+	   "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/x/beamx"
+	   "cloud.google.com/go/bigquery"
+	   "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam"
+	   "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/io/bigqueryio"
+	*/)
 
 type User struct {
-  ID   int32  `bigquery:"id"`
-  Name string `bigquery:"name"`
-  Age  int32  `bigquery:"age"`
+	ID   int32  `bigquery:"id"`
+	Name string `bigquery:"name"`
+	Age  int32  `bigquery:"age"`
 }
 
-var(projectID = "project-id"
-    datasetID = "dataset"
-    tableID = "table")
+var (
+	projectID = "project-id"
+	datasetID = "dataset"
+	tableID   = "table"
+)
 
 func main() {
-  log.Println("Running Task")
+	log.Println("Running Task")
 
-/*
-  ctx := context.Background()
+	/*
+	   ctx := context.Background()
 
+	   // set up pipeline
+	   p := beam.NewPipeline()
+	   s := p.Root()
+	   s = s.Scope("ReadFromBigQuery")
 
-  // set up pipeline
-  p := beam.NewPipeline()
-  s := p.Root()
-  s = s.Scope("ReadFromBigQuery")
+	   // Reads from the BigQuery table specified by the projectID, datasetID, and tableID, with the schema defined by the User struct, and stores the result in rows.
+	   rows := bigqueryio.Read(s, bigquery.TableReference{ProjectID: projectID, DatasetID: datasetID, TableID: tableID},
 
-  // Reads from the BigQuery table specified by the projectID, datasetID, and tableID, with the schema defined by the User struct, and stores the result in rows.
-  rows := bigqueryio.Read(s, bigquery.TableReference{ProjectID: projectID, DatasetID: datasetID, TableID: tableID},
-    beam.WithSchema(User{}))
+	   	beam.WithSchema(User{}))
 
-  beam.ParDo0(s, &logOutput{}, rows)
+	   beam.ParDo0(s, &logOutput{}, rows)
 
-  if err := beam.Run(ctx, p); err != nil {
-    log.Fatalf("Failed to execute job: %v", err)
-  }
-  */
+	   	if err := beam.Run(ctx, p); err != nil {
+	   	  log.Fatalf("Failed to execute job: %v", err)
+	   	}
+	*/
 }
 
 type logOutput struct{}
 
 func (l *logOutput) ProcessElement(row User, emit func(User)) {
-  log.Printf("Processing element: %v", row)
-  emit(row)
+	log.Printf("Processing element: %v", row)
+	emit(row)
 }

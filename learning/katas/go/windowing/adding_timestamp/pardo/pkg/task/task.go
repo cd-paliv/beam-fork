@@ -16,15 +16,16 @@
 package task
 
 import (
-	"github.com/apache/beam/sdks/v2/go/pkg/beam"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/graph/mtime"
 	"time"
+
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/graph/mtime"
 )
 
 // Commit represents data about a git commit message.
 type Commit struct {
 	Datetime time.Time
-	Message string
+	Message  string
 }
 
 // ApplyTransform applies a beam.EventTime timestamp to PCollection<Commit> elements.

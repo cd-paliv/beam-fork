@@ -24,7 +24,7 @@ import (
 	"strings"
 
 	"cloud.google.com/go/storage"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/log"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/log"
 	"golang.org/x/oauth2/google"
 )
 

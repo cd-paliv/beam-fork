@@ -19,7 +19,7 @@ import (
 	"container/heap"
 	"fmt"
 
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/graph/mtime"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/graph/mtime"
 )
 
 // mtimeHeap is a minHeap to find the earliest processing time event.

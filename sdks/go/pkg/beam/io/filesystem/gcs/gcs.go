@@ -25,11 +25,11 @@ import (
 	"time"
 
 	"cloud.google.com/go/storage"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/internal/errors"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/io/filesystem"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/log"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/util/fsx"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/util/gcsx"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/internal/errors"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/io/filesystem"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/log"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/util/fsx"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/util/gcsx"
 	"google.golang.org/api/iterator"
 )
 

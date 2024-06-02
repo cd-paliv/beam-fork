@@ -15,7 +15,7 @@
 
 package task
 
-import "github.com/apache/beam/sdks/v2/go/pkg/beam"
+import "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam"
 
 const (
 	Player1 = "Player 1"

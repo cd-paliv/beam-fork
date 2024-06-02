@@ -16,13 +16,14 @@
 package test
 
 import (
-	"beam.apache.org/learning/katas/windowing/fixed_time_window/fixed_time_window/pkg/common"
-	"beam.apache.org/learning/katas/windowing/fixed_time_window/fixed_time_window/pkg/task"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/testing/ptest"
-	"github.com/google/go-cmp/cmp"
 	"testing"
 	"time"
+
+	"beam.apache.org/learning/katas/windowing/fixed_time_window/fixed_time_window/pkg/common"
+	"beam.apache.org/learning/katas/windowing/fixed_time_window/fixed_time_window/pkg/task"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/testing/ptest"
+	"github.com/google/go-cmp/cmp"
 )
 
 func TestApplyTransform(t *testing.T) {

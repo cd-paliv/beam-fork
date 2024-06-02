@@ -16,23 +16,24 @@
 package test
 
 import (
-	"beam.apache.org/learning/katas/core_transforms/additional_outputs/additional_outputs/pkg/task"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/testing/passert"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/testing/ptest"
 	"testing"
+
+	"beam.apache.org/learning/katas/core_transforms/additional_outputs/additional_outputs/pkg/task"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/testing/passert"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/testing/ptest"
 )
 
 func TestApplyTransform(t *testing.T) {
 	p, s := beam.NewPipelineWithRoot()
 
-	tests := []struct{
-		input beam.PCollection
+	tests := []struct {
+		input        beam.PCollection
 		wantBelow100 []interface{}
 		wantAbove100 []interface{}
 	}{
 		{
-			input: beam.Create(s, 10, 50, 120, 20, 200, 0),
+			input:        beam.Create(s, 10, 50, 120, 20, 200, 0),
 			wantBelow100: []interface{}{0, 10, 20, 50},
 			wantAbove100: []interface{}{120, 200},
 		},

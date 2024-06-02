@@ -19,8 +19,8 @@ import (
 	"io"
 	"math"
 
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/graph/mtime"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/typex"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/graph/mtime"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/typex"
 )
 
 // EncodeEventTime encodes an EventTime as an uint64. The encoding is

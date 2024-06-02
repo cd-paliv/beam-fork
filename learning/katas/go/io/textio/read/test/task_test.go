@@ -16,14 +16,15 @@
 package test
 
 import (
+	"testing"
+
 	"beam.apache.org/learning/katas/io/textio/read/pkg/task"
 	"beam.apache.org/learning/katas/io/textio/read/testdata"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam"
-	_ "github.com/apache/beam/sdks/v2/go/pkg/beam/io/filesystem/local"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/io/textio"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/testing/passert"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/testing/ptest"
-	"testing"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam"
+	_ "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/io/filesystem/local"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/io/textio"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/testing/passert"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/testing/ptest"
 )
 
 var filePath = testdata.Path("countries.txt")
@@ -66,11 +67,11 @@ func TestApplyTransform(t *testing.T) {
 
 	tests := []struct {
 		input beam.PCollection
-		want []interface{}
-	} {
+		want  []interface{}
+	}{
 		{
 			input: textio.Read(s, filePath),
-			want:  []interface{}{
+			want: []interface{}{
 				"SINGAPORE",
 				"UNITED STATES",
 				"AUSTRALIA",

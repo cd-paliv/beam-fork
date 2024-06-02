@@ -22,11 +22,11 @@ import (
 
 	"encoding/base64"
 
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/funcx"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/graph/coder"
-	v1pb "github.com/apache/beam/sdks/v2/go/pkg/beam/core/runtime/graphx/v1"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/util/protox"
-	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/util/reflectx"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/funcx"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/graph/coder"
+	v1pb "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/runtime/graphx/v1"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/util/protox"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/util/reflectx"
 )
 
 // EncodeType encodes a type as a string. Unless registered, the decoded type

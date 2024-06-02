@@ -16,48 +16,48 @@
 // Package provision contains utilities for obtaining runtime provision,
 // information -- such as pipeline options.
 //
-// Deprecated: Use github.com/apache/beam/sdks/v2/go/container/tools package instead.
+// Deprecated: Use github.com/cd-paliv/beam-fork/sdks/v3/go/container/tools package instead.
 package provision
 
 import (
 	"context"
 
-	"github.com/apache/beam/sdks/v2/go/container/tools"
-	fnpb "github.com/apache/beam/sdks/v2/go/pkg/beam/model/fnexecution_v1"
+	"github.com/cd-paliv/beam-fork/sdks/v3/go/container/tools"
+	fnpb "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/model/fnexecution_v1"
 	google_pb "github.com/golang/protobuf/ptypes/struct"
 )
 
 // Info returns the runtime provisioning info for the worker.
 //
-// Deprecated: Use github.com/apache/beam/sdks/v2/go/container/tools instead.
+// Deprecated: Use github.com/cd-paliv/beam-fork/sdks/v3/go/container/tools instead.
 func Info(ctx context.Context, endpoint string) (*fnpb.ProvisionInfo, error) {
 	return tools.ProvisionInfo(ctx, endpoint)
 }
 
 // OptionsToProto converts pipeline options to a proto struct via JSON.
 //
-// Deprecated: Use github.com/apache/beam/sdks/v2/go/container/tools.OptionsToProto instead.
+// Deprecated: Use github.com/cd-paliv/beam-fork/sdks/v3/go/container/tools.OptionsToProto instead.
 func OptionsToProto(v any) (*google_pb.Struct, error) {
 	return tools.OptionsToProto(v)
 }
 
 // JSONToProto converts JSON-encoded pipeline options to a proto struct.
 //
-// Deprecated: Use github.com/apache/beam/sdks/v2/go/container/tools.JSONToProto instead.
+// Deprecated: Use github.com/cd-paliv/beam-fork/sdks/v3/go/container/tools.JSONToProto instead.
 func JSONToProto(data string) (*google_pb.Struct, error) {
 	return tools.JSONToProto(data)
 }
 
 // ProtoToOptions converts pipeline options from a proto struct via JSON.
 //
-// Deprecated: Use github.com/apache/beam/sdks/v2/go/container/tools.ProtoToOptions instead.
+// Deprecated: Use github.com/cd-paliv/beam-fork/sdks/v3/go/container/tools.ProtoToOptions instead.
 func ProtoToOptions(opt *google_pb.Struct, v any) error {
 	return tools.ProtoToOptions(opt, v)
 }
 
 // ProtoToJSON converts pipeline options from a proto struct to JSON.
 //
-// Deprecated: Use github.com/apache/beam/sdks/v2/go/container/tools.ProtoToJSON instead.
+// Deprecated: Use github.com/cd-paliv/beam-fork/sdks/v3/go/container/tools.ProtoToJSON instead.
 func ProtoToJSON(opt *google_pb.Struct) (string, error) {
 	return tools.ProtoToJSON(opt)
 }
