@@ -43,12 +43,12 @@ required arguments described in the examples.
 For example, to run `wordcount`, run:
 
 {{< runner direct >}}
-go run github.com/cd-paliv/beam-fork/sdks/v3/go/examples/wordcount@latest --input "gs://apache-beam-samples/shakespeare/kinglear.txt" --output counts
+go run github.com/apache/beam/sdks/v2/go/examples/wordcount@latest --input "gs://apache-beam-samples/shakespeare/kinglear.txt" --output counts
 less counts
 {{< /runner >}}
 
 {{< runner dataflow >}}
-go run github.com/cd-paliv/beam-fork/sdks/v3/go/examples/wordcount@latest --input gs://dataflow-samples/shakespeare/kinglear.txt \
+go run github.com/apache/beam/sdks/v2/go/examples/wordcount@latest --input gs://dataflow-samples/shakespeare/kinglear.txt \
             --output gs://<your-gcs-bucket>/counts \
             --runner dataflow \
             --project your-gcp-project \
@@ -63,7 +63,7 @@ go run github.com/cd-paliv/beam-fork/sdks/v3/go/examples/wordcount@latest --inpu
 ./gradlew :runners:spark:3:job-server:runShadow -PsparkMasterUrl=spark://localhost:7077
 
 # In a separate terminal, run:
-go run github.com/cd-paliv/beam-fork/sdks/v3/go/examples/wordcount@latest --input <PATH_TO_INPUT_FILE> \
+go run github.com/apache/beam/sdks/v2/go/examples/wordcount@latest --input <PATH_TO_INPUT_FILE> \
             --output counts \
             --runner spark \
             --endpoint localhost:8099
@@ -72,7 +72,7 @@ go run github.com/cd-paliv/beam-fork/sdks/v3/go/examples/wordcount@latest --inpu
 ## Next Steps
 
 * Learn more about the [Beam SDK for Go](/documentation/sdks/go/)
-  and look through the [godoc](https://pkg.go.dev/github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam).
+  and look through the [godoc](https://pkg.go.dev/github.com/apache/beam/sdks/v2/go/pkg/beam).
 * Walk through these WordCount examples in the [WordCount Example Walkthrough](/get-started/wordcount-example).
 * Clone the [Beam Go starter project](https://github.com/apache/beam-starter-go).
 * Take a self-paced tour through our [Learning Resources](/documentation/resources/learning-resources).

@@ -16,13 +16,12 @@
 package main
 
 import (
-	"context"
-
 	"beam.apache.org/learning/katas/core_transforms/combine/combine_perkey/pkg/task"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/log"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/x/beamx"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/x/debug"
+	"context"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/log"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/x/beamx"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/x/debug"
 )
 
 func main() {
@@ -30,7 +29,7 @@ func main() {
 
 	p, s := beam.NewPipelineWithRoot()
 
-	input := beam.ParDo(s, func(_ []byte, emit func(string, int)) {
+	input := beam.ParDo(s, func(_ []byte, emit func(string, int)){
 		emit(task.Player1, 15)
 		emit(task.Player2, 10)
 		emit(task.Player1, 100)

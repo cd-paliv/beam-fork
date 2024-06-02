@@ -39,7 +39,7 @@ The Python SDK supports Python 3.8, 3.9, 3.10, and 3.11.
 {{< /paragraph >}}
 
 {{< paragraph class="language-go">}}
-The [Go SDK](https://pkg.go.dev/github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam) supports Go v1.20+.
+The [Go SDK](https://pkg.go.dev/github.com/apache/beam/sdks/v2/go/pkg/beam) supports Go v1.20+.
 {{< /paragraph >}}
 
 {{< paragraph class="language-typescript">}}
@@ -7184,18 +7184,18 @@ The SDF also has a built-in `RestrictionTracker` implementation in Python:
 1. [OffsetRangeTracker](https://beam.apache.org/releases/pydoc/current/apache_beam.io.restriction_trackers.html#apache_beam.io.restriction_trackers.OffsetRestrictionTracker)
 
 Go also has a built-in `RestrictionTracker` type:
-1. [OffsetRangeTracker](https://pkg.go.dev/github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/io/rtrackers/offsetrange)
+1. [OffsetRangeTracker](https://pkg.go.dev/github.com/apache/beam/sdks/v2/go/pkg/beam/io/rtrackers/offsetrange)
 
 The watermark state is a user-defined object which is used to create a `WatermarkEstimator` from a
 `WatermarkEstimatorProvider`. The simplest watermark state could be a `timestamp`.
 
 The watermark estimator provider lets SDF authors define how to initialize the watermark state and
-create a watermark estimator. In [Java](https://beam.apache.org/releases/javadoc/current/org/apache/beam/sdk/transforms/DoFn.ProcessElement.html) and [Go](https://pkg.go.dev/github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam#ParDo)
+create a watermark estimator. In [Java](https://beam.apache.org/releases/javadoc/current/org/apache/beam/sdk/transforms/DoFn.ProcessElement.html) and [Go](https://pkg.go.dev/github.com/apache/beam/sdks/v2/go/pkg/beam#ParDo)
 this is the `DoFn`. [Python](https://beam.apache.org/releases/pydoc/current/apache_beam.transforms.core.html#apache_beam.transforms.core.WatermarkEstimatorProvider)
 has a dedicated `WatermarkEstimatorProvider` type.
 
 The watermark estimator tracks the watermark when an element-restriction pair is in progress.
-For APIs details, read the [Java](https://beam.apache.org/releases/javadoc/current/org/apache/beam/sdk/transforms/splittabledofn/WatermarkEstimator.html), [Python](https://beam.apache.org/releases/pydoc/current/apache_beam.io.iobase.html#apache_beam.io.iobase.WatermarkEstimator), and [Go](https://pkg.go.dev/github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/sdf#WatermarkEstimator)
+For APIs details, read the [Java](https://beam.apache.org/releases/javadoc/current/org/apache/beam/sdk/transforms/splittabledofn/WatermarkEstimator.html), [Python](https://beam.apache.org/releases/pydoc/current/apache_beam.io.iobase.html#apache_beam.io.iobase.WatermarkEstimator), and [Go](https://pkg.go.dev/github.com/apache/beam/sdks/v2/go/pkg/beam/core/sdf#WatermarkEstimator)
 reference documentation.
 
 There are some built-in `WatermarkEstimator` implementations in Java:
@@ -7210,8 +7210,8 @@ Along with the default `WatermarkEstimatorProvider`, there are the same set of b
 3. [WalltimeWatermarkEstimator](https://beam.apache.org/releases/pydoc/current/apache_beam.io.watermark_estimators.html#apache_beam.io.watermark_estimators.WalltimeWatermarkEstimator)
 
 The following `WatermarkEstimator` types are implemented in Go:
-1. [TimestampObservingEstimator](https://pkg.go.dev/github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/sdf#TimestampObservingWatermarkEstimator)
-2. [WalltimeWatermarkEstimator](https://pkg.go.dev/github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/sdf#WallTimeWatermarkEstimator)
+1. [TimestampObservingEstimator](https://pkg.go.dev/github.com/apache/beam/sdks/v2/go/pkg/beam/core/sdf#TimestampObservingWatermarkEstimator)
+2. [WalltimeWatermarkEstimator](https://pkg.go.dev/github.com/apache/beam/sdks/v2/go/pkg/beam/core/sdf#WallTimeWatermarkEstimator)
 
 To define an SDF, you must choose whether the SDF is bounded (default) or
 unbounded and define a way to initialize an initial restriction for an element. The distinction is
@@ -8004,7 +8004,7 @@ Beam's expansion service in which case an expansion service will be auto-started
 #### 13.2.3. Using cross-language transforms in a Go pipeline
 
 If a Go-specific wrapper for a cross-language is available, use that. Otherwise, you have to use the
-lower-level [CrossLanguage](https://pkg.go.dev/github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam#CrossLanguage)
+lower-level [CrossLanguage](https://pkg.go.dev/github.com/apache/beam/sdks/v2/go/pkg/beam#CrossLanguage)
 function to access the transform.
 
 **Expansion Services**
@@ -8021,7 +8021,7 @@ and call it from your pipeline as shown in the example:
 
 ```go
 import (
-    "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/io/xlang/kafkaio"
+    "github.com/apache/beam/sdks/v2/go/pkg/beam/io/xlang/kafkaio"
 )
 
 // Kafka Read using previously defined values.
@@ -8043,10 +8043,10 @@ When an SDK-specific wrapper isn't available, you will have to access the cross-
    Refer to [Creating cross-language transforms](#create-x-lang-transforms) for details.
 3. Use the `beam.CrossLanguage` function in your pipeline as appropriate. Reference the URN, payload,
    expansion service address, and define inputs and outputs. You can use the
-   [beam.CrossLanguagePayload](https://pkg.go.dev/github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam#CrossLanguagePayload)
+   [beam.CrossLanguagePayload](https://pkg.go.dev/github.com/apache/beam/sdks/v2/go/pkg/beam#CrossLanguagePayload)
    function as a helper for encoding a payload. You can use the
-   [beam.UnnamedInput](https://pkg.go.dev/github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam#UnnamedInput) and
-   [beam.UnnamedOutput](https://pkg.go.dev/github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam#UnnamedOutput)
+   [beam.UnnamedInput](https://pkg.go.dev/github.com/apache/beam/sdks/v2/go/pkg/beam#UnnamedInput) and
+   [beam.UnnamedOutput](https://pkg.go.dev/github.com/apache/beam/sdks/v2/go/pkg/beam#UnnamedOutput)
    functions as shortcuts for single, unnamed inputs/outputs or define a map for named ones.
 
    ```go

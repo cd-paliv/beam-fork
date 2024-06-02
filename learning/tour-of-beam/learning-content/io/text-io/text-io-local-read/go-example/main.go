@@ -26,32 +26,33 @@
 //   tags:
 //     - hellobeam
 
+
 package main
 
 import (
-	"context"
 	"regexp"
-
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/io/textio"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/log"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/x/beamx"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/io/textio"
+    "context"
+    "github.com/apache/beam/sdks/v2/go/pkg/beam/log"
+    "github.com/apache/beam/sdks/v2/go/pkg/beam/x/beamx"
 )
 
 var wordRE = regexp.MustCompile(`[a-zA-Z]+('[a-z])?`)
 
+
 func main() {
-	p, s := beam.NewPipelineWithRoot()
+    p, s := beam.NewPipelineWithRoot()
 	input := textio.Read(s, "myfile.txt")
 
-	beam.ParDo(s, func(line string, emit func(string)) {
-		for _, word := range wordRE.FindAllString(line, -1) {
-			emit(word)
-		}
-	}, input)
+    beam.ParDo(s, func(line string, emit func(string)) {
+     for _, word := range wordRE.FindAllString(line, -1) {
+        emit(word)
+      }
+    }, input)
 
-	err := beamx.Run(context.Background(), p)
-	if err != nil {
-		log.Exitf(context.Background(), "Failed to execute job: %v", err)
-	}
+err := beamx.Run(context.Background(), p)
+    if err != nil {
+        log.Exitf(context.Background(), "Failed to execute job: %v", err)
+    }
 }

@@ -24,40 +24,39 @@
 //   tags:
 //     - hellobeam
 
+
 package main
 
 import (
-	"context"
-	"regexp"
-
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam"
-	_ "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/io/filesystem/gcs"
-	_ "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/io/filesystem/local"
-	_ "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/io/textio"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/log"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/x/beamx"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/x/debug"
+  "context"
+  "github.com/apache/beam/sdks/v2/go/pkg/beam"
+  _ "github.com/apache/beam/sdks/v2/go/pkg/beam/io/textio"
+  "github.com/apache/beam/sdks/v2/go/pkg/beam/log"
+  "github.com/apache/beam/sdks/v2/go/pkg/beam/x/beamx"
+  "regexp"
+  "github.com/apache/beam/sdks/v2/go/pkg/beam/x/debug"
+  _ "github.com/apache/beam/sdks/v2/go/pkg/beam/io/filesystem/gcs"
+  _ "github.com/apache/beam/sdks/v2/go/pkg/beam/io/filesystem/local"
 )
-
 var wordRE = regexp.MustCompile(`[a-zA-Z]+('[a-z])?`)
 
 var locationGCS = "gs://mybucket/myfile.txt"
 
 func main() {
-	beam.Init()
+  beam.Init()
 
-	p := beam.NewPipeline()
-	s := p.Root()
+  p := beam.NewPipeline()
+  s := p.Root()
 
-	input := beam.Create(s, "Hello write from playground", "First example")
+  input := beam.Create(s, "Hello write from playground","First example")
 
-	// It may be unsupported. Since gcs requires credentials
-	// textio.Write(s, locationGCS, input)
+  // It may be unsupported. Since gcs requires credentials
+  // textio.Write(s, locationGCS, input)
 
-	debug.Printf(s, "Recorded data:", input)
+  debug.Printf(s,"Recorded data:", input)
 
-	err := beamx.Run(context.Background(), p)
-	if err != nil {
-		log.Exitf(context.Background(), "Failed to execute job: %v", err)
-	}
+  err := beamx.Run(context.Background(), p)
+    if err != nil {
+        log.Exitf(context.Background(), "Failed to execute job: %v", err)
+    }
 }

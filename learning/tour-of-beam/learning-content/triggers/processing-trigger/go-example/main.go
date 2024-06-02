@@ -32,13 +32,12 @@ package main
 import (
 	"context"
 	"fmt"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/graph/window"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/core/graph/window/trigger"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/log"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/x/beamx"
 	"time"
-
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/graph/window"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/core/graph/window/trigger"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/log"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/x/beamx"
 )
 
 func main() {

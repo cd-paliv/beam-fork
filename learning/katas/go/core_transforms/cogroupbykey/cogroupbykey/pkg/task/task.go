@@ -17,8 +17,7 @@ package task
 
 import (
 	"fmt"
-
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam"
 )
 
 func ApplyTransform(s beam.Scope, fruits beam.PCollection, countries beam.PCollection) beam.PCollection {
@@ -43,10 +42,11 @@ func ApplyTransform(s beam.Scope, fruits beam.PCollection, countries beam.PColle
 
 type WordsAlphabet struct {
 	Alphabet string
-	Fruit    string
-	Country  string
+	Fruit string
+	Country string
 }
 
 func (wa *WordsAlphabet) String() string {
 	return fmt.Sprintf("WordsAlphabet%+v", *wa)
 }
+

@@ -17,34 +17,31 @@
 */
 
 // beam-playground:
-//
-//	name: read-query
-//	description: BigQueryIO read query example.
-//	multifile: false
-//	context_line: 42
-//	never_run: true
-//	always_run: true
-//	categories:
-//	  - Quickstart
-//	complexity: ADVANCED
-//	tags:
-//	  - hellobeam
+//   name: read-query
+//   description: BigQueryIO read query example.
+//   multifile: false
+//   context_line: 42
+//   never_run: true
+//   always_run: true
+//   categories:
+//     - Quickstart
+//   complexity: ADVANCED
+//   tags:
+//     - hellobeam
 package main
 
 import (
 	"context"
-
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/io/bigqueryio"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/log"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/transforms/top"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/x/beamx"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/x/debug"
-
-	internal_log "log"
-	"reflect"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/io/bigqueryio"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/log"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/transforms/top"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/x/beamx"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/x/debug"
 
 	"cloud.google.com/go/bigquery"
+	internal_log "log"
+	"reflect"
 )
 
 type Game struct {

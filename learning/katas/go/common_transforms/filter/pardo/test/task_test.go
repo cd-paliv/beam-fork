@@ -16,23 +16,22 @@
 package test
 
 import (
-	"testing"
-
 	"beam.apache.org/learning/katas/common_transforms/filter/pardo/pkg/task"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/testing/passert"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/testing/ptest"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/testing/passert"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/testing/ptest"
+	"testing"
 )
 
 func TestApplyTransform(t *testing.T) {
 	p, s := beam.NewPipelineWithRoot()
 	tests := []struct {
 		input beam.PCollection
-		want  []interface{}
+		want []interface{}
 	}{
 		{
 			input: beam.Create(s, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10),
-			want:  []interface{}{1, 3, 5, 7, 9},
+			want: []interface{}{1, 3, 5, 7, 9},
 		},
 	}
 	for _, tt := range tests {

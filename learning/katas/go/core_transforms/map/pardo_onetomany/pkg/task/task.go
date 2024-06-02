@@ -16,9 +16,8 @@
 package task
 
 import (
+	"github.com/apache/beam/sdks/v2/go/pkg/beam"
 	"strings"
-
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam"
 )
 
 func ApplyTransform(s beam.Scope, input beam.PCollection) beam.PCollection {
@@ -31,3 +30,4 @@ func tokenizeFn(input string, emit func(out string)) {
 		emit(k)
 	}
 }
+

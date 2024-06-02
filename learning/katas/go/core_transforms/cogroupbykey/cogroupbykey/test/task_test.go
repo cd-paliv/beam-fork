@@ -16,12 +16,11 @@
 package task
 
 import (
-	"testing"
-
 	"beam.apache.org/learning/katas/core_transforms/cogroupbykey/cogroupbykey/pkg/task"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/testing/passert"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/testing/ptest"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/testing/passert"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/testing/ptest"
+	"testing"
 )
 
 func TestApplyTransform(t *testing.T) {
@@ -36,7 +35,7 @@ func TestApplyTransform(t *testing.T) {
 	}{
 		{
 			args: args{
-				fruits:    beam.Create(s.Scope("Fruits"), "apple", "banana", "cherry"),
+				fruits: beam.Create(s.Scope("Fruits"), "apple", "banana", "cherry"),
 				countries: beam.Create(s.Scope("Countries"), "australia", "brazil", "canada"),
 			},
 			want: []interface{}{

@@ -237,7 +237,7 @@ WORKDIR /tmp/beam
 
 # Build the Beam Go bootloader, to the local directory, matching your Beam version.
 # Similar go targets exist for other SDK languages.
-RUN GOBIN=`pwd` go install github.com/cd-paliv/beam-fork/sdks/v3/go/container@v2.53.0
+RUN GOBIN=`pwd` go install github.com/apache/beam/sdks/v2/go/container@v2.53.0
 
 # Set the real base image.
 FROM alpine:3.9

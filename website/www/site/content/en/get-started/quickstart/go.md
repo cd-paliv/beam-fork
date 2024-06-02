@@ -175,7 +175,7 @@ Google Cloud Dataflow. These systems support massively parallel processing.
 
 * Learn more about the [Beam SDK for Go](/documentation/sdks/go/)
   and look through the
-  [Go SDK API reference](https://pkg.go.dev/github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam).
+  [Go SDK API reference](https://pkg.go.dev/github.com/apache/beam/sdks/v2/go/pkg/beam).
 * Take a self-paced tour through our
   [Learning Resources](/documentation/resources/learning-resources).
 * Dive in to some of our favorite
@@ -185,9 +185,9 @@ Google Cloud Dataflow. These systems support massively parallel processing.
 Please don't hesitate to [reach out](/community/contact-us) if you encounter any
 issues!
 
-[Init]: https://pkg.go.dev/github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam#Init
-[Create]: https://pkg.go.dev/github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam#Create
-[NewPipelineWithRoot]: https://pkg.go.dev/github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam#NewPipelineWithRoot
-[ParDo]: https://pkg.go.dev/github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam#ParDo
+[Init]: https://pkg.go.dev/github.com/apache/beam/sdks/v2/go/pkg/beam#Init
+[Create]: https://pkg.go.dev/github.com/apache/beam/sdks/v2/go/pkg/beam#Create
+[NewPipelineWithRoot]: https://pkg.go.dev/github.com/apache/beam/sdks/v2/go/pkg/beam#NewPipelineWithRoot
+[ParDo]: https://pkg.go.dev/github.com/apache/beam/sdks/v2/go/pkg/beam#ParDo
 [Title]: https://pkg.go.dev/strings#Title
 

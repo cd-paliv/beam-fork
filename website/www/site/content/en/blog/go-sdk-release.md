@@ -30,16 +30,16 @@ Built with the [Go Programming Language](https://golang.org/), the Go SDK joins 
 New users of the Go SDK can start using it in their Go programs by importing the main beam package:
 
 ```
-import "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam"
+import "github.com/apache/beam/sdks/v2/go/pkg/beam"
 ```
 
 The next run of `go mod tidy` will fetch the latest stable version of the module.
-Alternatively executing `go get github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam` will download it to the local module cache immeadiately, and add it to your `go.mod` file.
+Alternatively executing `go get github.com/apache/beam/sdks/v2/go/pkg/beam` will download it to the local module cache immeadiately, and add it to your `go.mod` file.
 
 Existing users of the experimental Go SDK need to update to new `v2` import paths to start using the latest versions of the SDK.
-This can be done by adding `v2` to the import paths, changing `github.com/apache/beam/sdks/go/`... to `github.com/cd-paliv/beam-fork/sdks/v3/go/`... where applicable, and then running `go mod tidy`.
+This can be done by adding `v2` to the import paths, changing `github.com/apache/beam/sdks/go/`... to `github.com/apache/beam/sdks/v2/go/`... where applicable, and then running `go mod tidy`.
 
-Further documentation on using the SDK is available in the [Beam Programming Guide](/documentation/programming-guide/), and in the package [Go Doc](https://pkg.go.dev/github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam).
+Further documentation on using the SDK is available in the [Beam Programming Guide](/documentation/programming-guide/), and in the package [Go Doc](https://pkg.go.dev/github.com/apache/beam/sdks/v2/go/pkg/beam).
 
 ## Feature Support
 
@@ -116,7 +116,7 @@ Major changes will be mentioned in the release notes.
 For example, using `beam.WindowInto` with Triggers is currently experimental and may have the API changed in a future release.
 
 Primary user packages include:
-* The main beam package `github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam`
+* The main beam package `github.com/apache/beam/sdks/v2/go/pkg/beam`
 * Sub packages under `.../transforms`, `.../io`, `.../runners`, and `.../testing`.
 
 Generally, packages in the module other than the primary user packages are for framework use and are at risk of changing.

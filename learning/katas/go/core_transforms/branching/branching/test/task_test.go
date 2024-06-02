@@ -16,12 +16,11 @@
 package test
 
 import (
-	"testing"
-
 	"beam.apache.org/learning/katas/core_transforms/branching/branching/pkg/task"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/testing/passert"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/testing/ptest"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/testing/passert"
+	"github.com/apache/beam/sdks/v2/go/pkg/beam/testing/ptest"
+	"testing"
 )
 
 func TestApplyTransform(t *testing.T) {
@@ -47,3 +46,4 @@ func TestApplyTransform(t *testing.T) {
 		}
 	}
 }
+

@@ -7,9 +7,9 @@ Response:
 Apache Beam has a built-in connector for Cloud Bigtable that lets you read data from and write data to Bigtable. For more information, see the BigtableIO connector documentation:
 * [Java](https://beam.apache.org/releases/javadoc/current/org/apache/beam/sdk/io/gcp/bigtable/BigtableIO.html)
 * [Python](https://beam.apache.org/releases/pydoc/current/apache_beam.io.gcp.bigtableio.html)
-* [Python (using cross-language transforms)](https://pkg.go.dev/github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/io/xlang/bigtableio)
-* [Go](https://pkg.go.dev/github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/io/bigtableio)
-* [Go (using cross-language transforms)](https://pkg.go.dev/github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/io/xlang/bigtableio)
+* [Python (using cross-language transforms)](https://pkg.go.dev/github.com/apache/beam/sdks/v2/go/pkg/beam/io/xlang/bigtableio)
+* [Go](https://pkg.go.dev/github.com/apache/beam/sdks/v2/go/pkg/beam/io/bigtableio)
+* [Go (using cross-language transforms)](https://pkg.go.dev/github.com/apache/beam/sdks/v2/go/pkg/beam/io/xlang/bigtableio)
 
 To get started with Cloud Bigtable and Apache Beam, refer to the [Dataflow Cookbook repository](https://github.com/GoogleCloudPlatform/dataflow-cookbook).
 

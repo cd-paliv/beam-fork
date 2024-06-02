@@ -7,7 +7,7 @@ Yes, Apache Beam supports BigQuery. [BigQuery](https://cloud.google.com/bigquery
 The following Apache Beam SDKs support the BigQueryIO connector:
 * [Java](https://beam.apache.org/releases/javadoc/current/org/apache/beam/sdk/io/gcp/bigquery/BigQueryIO.html)
 * [Python](https://beam.apache.org/releases/pydoc/current/apache_beam.io.gcp.bigquery.html)
-* [Go](https://pkg.go.dev/github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/io/bigqueryio) (native and through [X Language](https://pkg.go.dev/github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/io/xlang/bigqueryio))
+* [Go](https://pkg.go.dev/github.com/apache/beam/sdks/v2/go/pkg/beam/io/bigqueryio) (native and through [X Language](https://pkg.go.dev/github.com/apache/beam/sdks/v2/go/pkg/beam/io/xlang/bigqueryio))
 * [Typescript](https://github.com/apache/beam/blob/master/sdks/typescript/src/apache_beam/io/bigqueryio.ts) (through X Language)
 
 To read data from BigQuery, use the `ReadFromBigQuery` function. Apache Beam can read data directly from a BigQuery table or using an SQL query. The default mode is to return table rows read from a BigQuery source as dictionaries. Built-in `TableRow` objects can also be returned.

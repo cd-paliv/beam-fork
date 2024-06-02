@@ -65,7 +65,7 @@ You can find the full code of this example in the playground window, which you c
 {{if (eq .Sdk "go")}}
 Before you start, add a dependency:
 ```
-"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/io/textio"
+"github.com/apache/beam/sdks/v2/go/pkg/beam/io/textio"
 ```
 
 You can also combine data from a file:

@@ -27,40 +27,38 @@
 package main
 
 import (
-	"context"
-	"fmt"
-	"regexp"
-
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam"
-	_ "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/io/filesystem/gcs"
-	_ "github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/io/filesystem/local"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/io/textio"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/log"
-	"github.com/cd-paliv/beam-fork/sdks/v3/go/pkg/beam/x/beamx"
+  "context"
+  "github.com/apache/beam/sdks/v2/go/pkg/beam"
+  "github.com/apache/beam/sdks/v2/go/pkg/beam/io/textio"
+  "github.com/apache/beam/sdks/v2/go/pkg/beam/log"
+  "github.com/apache/beam/sdks/v2/go/pkg/beam/x/beamx"
+  "regexp"
+  "fmt"
+  _ "github.com/apache/beam/sdks/v2/go/pkg/beam/io/filesystem/gcs"
+  _ "github.com/apache/beam/sdks/v2/go/pkg/beam/io/filesystem/local"
 )
-
 var wordRE = regexp.MustCompile(`[a-zA-Z]+('[a-z])?`)
 
 func main() {
-	beam.Init()
+  beam.Init()
 
-	p := beam.NewPipeline()
-	s := p.Root()
+  p := beam.NewPipeline()
+  s := p.Root()
 
-	input := textio.Read(s, "gs://apache-beam-samples/shakespeare/kinglear.txt")
+  input := textio.Read(s, "gs://apache-beam-samples/shakespeare/kinglear.txt")
 
-	applyTransform(s, input)
+  applyTransform(s, input)
 
-	err := beamx.Run(context.Background(), p)
-	if err != nil {
-		log.Exitf(context.Background(), "Failed to execute job: %v", err)
-	}
+  err := beamx.Run(context.Background(), p)
+    if err != nil {
+        log.Exitf(context.Background(), "Failed to execute job: %v", err)
+    }
 }
 
 func applyTransform(s beam.Scope, input beam.PCollection) {
-	beam.ParDo0(s, func(line string) {
-		for _, word := range wordRE.FindAllString(line, -1) {
-			fmt.Println(word)
-		}
-	}, input)
+    beam.ParDo0(s, func(line string) {
+        for _, word := range wordRE.FindAllString(line, -1) {
+          fmt.Println(word)
+        }
+    }, input)
 }
