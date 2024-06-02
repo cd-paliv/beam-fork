@@ -120,6 +120,7 @@ func (v *valueTemplateGenerator) generate(rowCount int, columnColunt int) string
 			valueTemplates[i] = fmt.Sprintf("(%s)", strings.Join(templates, ","))
 		}
 		return strings.Join(valueTemplates, ",")
+	// add support for oracle
 	default:
 		// the point is to generate (?,?),(?,?)
 		questions := strings.Repeat("?,", columnColunt)
