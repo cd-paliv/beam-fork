@@ -107,6 +107,7 @@ type valueTemplateGenerator struct {
 }
 
 func (v *valueTemplateGenerator) generate(rowCount int, columnColunt int) string {
+	fmt.Println("AAAAA MY FORK")
 	switch v.driver {
 	case "postgres", "pgx":
 		// the point is to generate ($1,$2),($3,$4)
