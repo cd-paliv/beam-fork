@@ -40,7 +40,7 @@
 //	//go:generate go install github.com/cd-paliv/beam-fork/sdks/v3/go/cmd/starcgen
 //	//go:generate starcgen --package=<mypackagename> --inputs=foo.go --identifiers=myFn,myStructFn --output=custom.shims.go
 //	//go:generate go fmt
-package main
+package starcgen
 
 import (
 	"flag"
