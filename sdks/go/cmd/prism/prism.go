@@ -15,7 +15,7 @@
 
 // prism is a stand alone local Beam Runner. It produces a JobManagement service endpoint
 // against which jobs can be submited, and a web UI to inspect running and completed jobs.
-package prism
+package main
 
 import (
 	"context"
